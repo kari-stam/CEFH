@@ -5,7 +5,6 @@
 }
 
 @media (max-width: 940px) {
-
 }
 
 @media (min-width: 940px) {
@@ -37,12 +36,14 @@ a:active{
   }
 
 #header {
-  font-family: crimson, serif;
-  font-size: 64pt;
+  font-family: "Crimson Text", serif;
+  font-size: 45pt;
+  font-variant: normal;
+  font-weight: 50;
 }
 
 .subheader1 {
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-style: medium;
   font-size: 36pt;
 }
