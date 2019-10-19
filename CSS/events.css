@@ -3,10 +3,19 @@
 .box {
 
   position: absolute;
+  width: 1440px;
   height: 215px;
   left: -2px;
   top: 100px;
 
   background: #F5F5F5;
 
+}
+
+h1 {
+position: absolute;
+width: 1050px;
+height: 86px;
+left: 196px;
+top: 164px;
 }
