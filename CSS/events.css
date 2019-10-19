@@ -19,3 +19,11 @@ height: 86px;
 left: 196px;
 top: 164px;
 }
+
+p {
+  position: absolute;
+  width: 328px;
+  height: 89px;
+  left: 206px;
+  top: 345px;
+}
