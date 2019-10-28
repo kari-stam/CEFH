@@ -36,6 +36,7 @@ a:active{
   }
 
 #header {
+  margin-top: 100px;
   font-family: "Crimson Text", serif;
   font-size: 45pt;
   font-variant: normal;
