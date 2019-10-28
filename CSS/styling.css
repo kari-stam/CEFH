@@ -13,8 +13,6 @@
 body {
   background-color: #eaf1ef;
   color: #4f4f4f;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
 .whitebox{
@@ -36,10 +34,23 @@ a:active{
   }
 
 #header {
+  margin-top: 100px;
   font-family: "Crimson Text", serif;
   font-size: 45pt;
   font-variant: normal;
   font-weight: 50;
+
+}
+#header, .subheader1,.subheader2,.bodytext1,.bodytext2,{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#headerbox{
+  background-color:#f5f5f5;
+  top: 0px;
+  width:100%;
+  height: 200px;
 }
 
 .subheader1 {
