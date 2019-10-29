@@ -1,13 +1,15 @@
 
-h1{
-  margin-bottom: 0;
-  height: 170px;
-  width: 100%;
+#peopleText{
+  text-align: center;
+  margin-top: 160px;
 }
+
 
 #searchBox{
   position: relative;
   margin-top: 80px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #searchButton{
