@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
+
 
 @media (max-width: 940px) {
 }
@@ -13,13 +9,8 @@
 body {
   background-color: #eaf1ef;
   color: #4f4f4f;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
-.whitebox{
-  background-color: #f5f5f5; /*den lyseste gråfargen*/
-}
 
 a{
   color: #4f4f4f;
@@ -41,31 +32,44 @@ a:active{
   font-size: 45pt;
   font-variant: normal;
   font-weight: 50;
+  margin-left: 15%;
+  margin-right: 15%;
+
 }
 
 .subheader1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: medium;
-  font-size: 36pt;
+  font-weight:lighter;
+  font-size: 26pt;
+  letter-spacing: 1px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .subheader2 {
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: medium;
-  font-size: 26pt;
+  font-weight:lighter;
+  font-size: 18pt;
+  letter-spacing: 1px;
   letter-spacing: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .bodytext1 {
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: medium;
-  font-size: 16pt;
+  font-weight:lighter;
+  font-size: 12pt;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .bodytext2 {
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: medium;
+  font-weight:lighter;
   font-size: 14pt;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .menu {

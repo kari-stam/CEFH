@@ -1,1 +1,82 @@
 
+#headerbox{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:#f5f5f5;
+  top: 0px;
+  width:100%;
+  height: 250px;
+}
+
+#researchbox {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom:30px;
+  background-color:#f5f5f5;
+  top: 0px;
+  width:100% !important;
+  height: 920px;
+}
+
+#datasourcesbox {
+  padding-top: 60px;
+  padding-bottom:30px;
+}
+
+
+.bodytext1{
+  margin-bottom: 25px;
+}
+
+.list li::before, .datasourcelist li::before {
+  content: "\2022";  /* \2022 is the CSS Code/unicode for a bullet */
+  color: #68c394;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.1em;
+  margin-left: -0.8em;
+  margin-top:-0.3em;
+  position: absolute;
+}
+#firsttext{
+  margin-bottom: 100px;
+}
+
+.list li, .datasourcelist li{
+ margin-bottom: 15px;
+}
+
+ .list{
+  margin-left: 24%;
+  margin-right: 24%;
+  position: relative;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: medium;
+  font-size: 12pt;
+  list-style-type:none;
+  margin-bottom: 100px;
+}
+
+.datasourcelist {
+  margin-left: 24%;
+  margin-right: 24%;
+  position: relative;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: medium;
+  font-size: 12pt;
+  list-style-type:none;
+  margin-bottom: 60px;
+}
+
+
+.listheader{
+  margin-left: 25%;
+  margin-right: 24%;
+  font-weight:lighter;
+  letter-spacing: 1px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 15pt;
+  font-style: thin;
+
+}
