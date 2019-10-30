@@ -9,6 +9,7 @@
 body {
   background-color: #eaf1ef;
   color: #4f4f4f;
+  margin: 0;
 }
 
 
@@ -70,16 +71,4 @@ a:active{
   font-size: 14pt;
   margin-left: 15%;
   margin-right: 15%;
-}
-
-.menu {
-  position: absolute;
-  width: 1440px;
-  height: 100px;
-  left: 1px;
-  top: 0px;
-
-  background: #F5F5F5;
-  box-shadow: 0px 2px 20px rgba(188, 188, 188, 0.25);
-  backdrop-filter: blur(30px);
 }
