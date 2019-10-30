@@ -1,0 +1,34 @@
+#searchbox{
+    position: absolute;
+    width: 1041px;
+    height: 74px;
+    left: 200px;
+    top: 370px;
+}
+#headerbox{
+    position: absolute;
+    width: 1440px;
+    height: 215px;
+    left: 0px;
+    top: 100px;
+    background-color: #f5f5f5;
+}
+
+/*#header{
+    position: absolute;
+    width: 328px;
+    height: 98px;
+    left: 352px;
+    top: 158px;
+}*/
+.top{
+    margin: auto;
+    width: 100%;
+    padding: 0;
+}
+.main{
+    margin: auto;
+    width: 70%;
+    padding: 0;
+    height: 100%;
+}
