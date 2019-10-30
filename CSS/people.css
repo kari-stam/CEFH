@@ -54,18 +54,12 @@
   width: 60%;
 }
 
-.personalinfo{
-  list-style-type: none;
-  padding-inline-start:0;
+p{
   color:#4F4F4F;
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
 }
 
-.personalinfo li{
-  width:164px;
-  margin-right:0px;
-}
 
 #coregroup{
   margin-top:12px;
@@ -75,24 +69,42 @@
   letter-spacing: 1px;
 }
 
-a {
+#contentlist a {
   color:#8d8d8d;
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
   text-decoration: none;
 }
 
-a:hover {
+#contentlist a:hover {
   color:#4F4F4F;
   text-decoration: none;
+}
+
+
+.personbox{
+  display: inline-block;
+  width:164px;
+  margin-right:9%;
+  padding: 5px;
+}
+.personbox:hover {
+  background: #e6e6e6;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:none;
 }
 
 img {
   width:164px;
   height:218px;
-  margin-right:70px;
 }
 
-.lastimg{
-  margin-right:0px;
+#third_in_row{
+  margin-right:0px ;
 }
