@@ -1,19 +1,88 @@
-img {
-  width: 30px;
-  height: auto;
+
+#peopleText{
+  text-align: center;
+  margin-top: 160px;
 }
 
-#searchbox {
-  background-color: red;
+
+#searchBox{
+  position: relative;
+  margin-top: 80px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#searchButton{
+  position: absolute;
+  display: block;
+  background-color: #f5f5f5;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 7px;
+  right: 0;
+}
+#searchButton img{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+#searchText{
+  position: absolute;
+  background-color: #f5f5f5;
+  border: none;
+  padding-left: 30px;
   width: 100%;
   height: 50px;
   display: block;
 }
+placeholder{
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 12pt;
+}
+.articleTitle{
+  margin-left: 5%;
+  padding-top: 5%;
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:bolder;
+  font-size: 12pt;
+}
 
-#search{
+.articleData {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 12pt;
+  padding-bottom: 5%
+}
+.yearHeader{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 26pt;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.year{
+  position: absolute;
+  width: 70%;
+  right: 0;
+}
+#wrapper{
+  margin-left: 15%;
+  margin-right: 15%;
   position: relative;
+  display: block;
+}
+
+.article{
   background-color: #f5f5f5;
-  border: none;
-  padding-left: 30px;
-  align-self: center;
 }
