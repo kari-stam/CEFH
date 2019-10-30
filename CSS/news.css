@@ -1,12 +1,20 @@
-#searchbox{
+/*#searchBox{
     position: relative;
     width: 100%;
     height: 75px;
     top: 55px;
 
-}
+}*/
 
-#search{
+/*Fra publications*/
+
+#searchBox{
+    position: relative;
+    width: 100%;
+    top: 55px;
+  }
+
+/*#search{
     height: 75px;
     width: 100%;
     background-color: #f5f5f5;
@@ -14,8 +22,38 @@
     font-family: futura, "Trebuchet MS", Arial, sans-serif;
     font-weight:lighter;
     font-size: 12pt;
-    border: 0px;
-}
+    border: none;
+}*/
+
+/*Fra publications*/
+
+#search{
+    position: absolute;
+    background-color: #f5f5f5;
+    border: none;
+    padding-left: 30px;
+    width: 100%;
+    height: 75px;
+    display: block;
+  }
+
+#searchButton{
+    position: absolute;
+    display: block;
+    background-color: #f5f5f5;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 7px; /*her må det fikses noe - img. er litt facka*/
+    right: 0;
+  }
+
+  #searchButton img{ /*her må det også gjøres noe så img. havner midt i søkefeltet*/
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
 
 .white{
     padding-top: 20px;
