@@ -38,21 +38,25 @@
   height: 50px;
   display: block;
 }
-
+placeholder{
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 12pt;
+}
 .articleTitle{
   margin-left: 5%;
   padding-top: 5%;
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:bolder;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
-.articleData{
+.articleData {
   margin-left: 5%;
   margin-right: 5%;
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
-  font-size: 14pt;
+  font-size: 12pt;
   padding-bottom: 5%
 }
 .yearHeader{
@@ -63,13 +67,13 @@
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 15%;
-  margin-top: 15%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .year{
   position: absolute;
-  width: 60%;
+  width: 70%;
   right: 0;
 }
 #wrapper{
