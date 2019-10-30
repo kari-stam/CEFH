@@ -85,7 +85,7 @@ p{
 .personbox{
   display: inline-block;
   width:164px;
-  margin-right:60px;
+  margin-right:9%;
   padding: 5px;
 }
 .personbox:hover {
@@ -105,6 +105,6 @@ img {
   height:218px;
 }
 
-.lastimg{
-  margin-right:0px;
+#third_in_row{
+  margin-right:0px ;
 }
