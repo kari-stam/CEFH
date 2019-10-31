@@ -8,11 +8,17 @@
         <link href="https://fonts.googleapis.com/css?family=Crimson Text" rel="stylesheet">
     </head>
     <body>
+      <script>
+      function check(){
+        var search=document.getElementById("searchText").value;
+        console.log(search);
+      }
+      </script>
 
         <h1 id="header"> Publications at the Centre of Fertility and Health </h1>
         <div id="searchBox">
           <input type="text" placeholder="Publications search.." id="searchText">
-          <button type="submit" id="searchButton"><img src="img/søk.png"></button>
+          <input type="submit" value="" id="searchButton" onclick="check()">
         </div>
       <p class="bodytext1" id="peopleText"> For a complete list of publications from each centre member, please go to <a href="people.html">people</a></p>
       <div id="wrapper">
@@ -40,5 +46,6 @@
               <br>
         </div>
       </div>
+
     </body>
 </html>

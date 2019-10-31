@@ -10,13 +10,16 @@
     <body>
       <div id="wrapper">
         <div class="navbar bodytext1">
-            <button href="homepage.html" id="homeButton"><img src="img/logo.png"></button>
+            <button href="homepage.html" id="homeButton"></button>
             <a href="about.html">About</a>
             <a href="people.html">People</a>
             <a href="publications.html">Publications</a>
             <a href="events.html">Events</a>
             <a href="news.html">News</a>
-            <button type="submit" id="searchButton"><img src="img/søk.png"></button>
+            <div id="searchBox">
+              <input type="text" placeholder="Search.." id="searchText">
+              <input type="submit" value="" id="searchButton" onclick="check()">
+            </div>
         </div>
       </div>
     </body>
