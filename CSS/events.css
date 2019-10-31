@@ -1,23 +1,32 @@
 
+.event {
+  background-color: #F5F5F5;
+  border:none;
+  padding-left: 30px;
+  align-self: center;
+}
 
-.box {
+.eventstilte {
+  margin-left: 5%;
+  padding-top:5%;
+  font-weight:bolder;
+}
 
-  position: absolute;
-  width: 1440px;
-  height: 215px;
-  left: -2px;
-  top: 100px;
-
-  background: #F5F5F5;
+#wrapper {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 10%;
+  display: block;
 
 }
 
-h1 {
-position: absolute;
-width: 1050px;
-height: 86px;
-left: 196px;
-top: 164px;
+.filterbox {
+  position: absolute;
+  margin-left: 3%
+}
+
+.month {
+
 }
 
 .eventboxes {
