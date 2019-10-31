@@ -9,7 +9,7 @@
 body {
   background-color: #eaf1ef;
   color: #4f4f4f;
-  margin: 0;
+  margin: auto;
 }
 
 
@@ -35,7 +35,6 @@ a:active{
   font-weight: 50;
   margin-left: 15%;
   margin-right: 15%;
-
 }
 
 .subheader1 {
