@@ -48,7 +48,7 @@
   margin-bottom: 10px;
 }
 
-.teamgroups{
+#teamgroups{
   margin-left:7%;
   margin-right: 15%;
   width: 60%;
@@ -61,7 +61,7 @@ p{
 }
 
 
-#coregroup{
+#coregroup, #researchers, #research_affiliates, #administrative_staff, #board, #scientific_advisory_committee {
   margin-top:12px;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
@@ -89,7 +89,7 @@ p{
   padding: 5px;
 }
 .personbox:hover {
-  background: #e6e6e6;
+  transform: scale(1.1);
 }
 
 a {
@@ -105,6 +105,33 @@ img {
   height:218px;
 }
 
-#third_in_row{
+.third_in_row{
   margin-right:0px ;
+}
+
+
+.list li::before {
+  content: "\2022";  /* \2022 is the CSS Code/unicode for a bullet */
+  color: #68c394;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.1em;
+  margin-left: -0.8em;
+  margin-top:-0.3em;
+  position: absolute;
+}
+
+.list li {
+ margin-bottom: 15px;
+}
+
+ .list{
+  position: relative;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: medium;
+  font-size: 12pt;
+  list-style-type:none;
+  margin-bottom: 100px;
+  padding-inline-start: 20px;
 }
