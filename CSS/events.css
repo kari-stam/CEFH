@@ -1,6 +1,6 @@
 
 
-.box {
+/*.box {
 
   position: absolute;
   width: 1440px;
@@ -8,20 +8,23 @@
   left: -2px;
   top: 100px;
 
-  background: #F5F5F5;
+  background: #F5F5F5;*/
 
-}
+
 
 h1 {
-position: absolute;
+position: relative;
+margin: 64px;
 width: 1050px;
 height: 86px;
 left: 196px;
 top: 164px;
+background-color: #F5F5F5;
 }
 
+
 p {
-  position: absolute;
+  position: relative;
   width: 328px;
   height: 89px;
   left: 206px;
