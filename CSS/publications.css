@@ -7,7 +7,7 @@
 
 #searchBox{
   position: relative;
-  margin-top: 20%;
+  margin-top: 7%;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -22,7 +22,6 @@
   margin-top: 7px;
   right: 0;
 }
-
 
 #searchText{
   position: absolute;
