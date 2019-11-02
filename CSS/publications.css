@@ -4,10 +4,9 @@
   margin-top: 160px;
 }
 
-
 #searchBox{
   position: relative;
-  margin-top: 7%;
+  margin-top: 80px;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -15,12 +14,18 @@
 #searchButton{
   position: absolute;
   display: block;
-  background: url("../img/søk.png") no-repeat center;
+  background-color: #f5f5f5;
   border: none;
   width: 40px;
   height: 40px;
   margin-top: 7px;
   right: 0;
+}
+#searchButton img{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: auto;
 }
 
 #searchText{
@@ -65,8 +70,9 @@ placeholder{
   margin-top: 10%;
 }
 
-.year{
+#contentBox{
   position: absolute;
+  display: block;
   width: 70%;
   right: 0;
 }
@@ -79,4 +85,16 @@ placeholder{
 
 .article{
   background-color: #f5f5f5;
+}
+
+#navbar{
+  position: absolute;
+  display: block;
+  width: 30%;
+  left: 0;
+  margin-top:3%;
+}
+
+.yearLink{
+  
 }
