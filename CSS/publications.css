@@ -14,7 +14,7 @@
 #searchButton{
   position: absolute;
   display: block;
-  background-color: #f5f5f5;
+  background: url("img/søk.png") no-repeat center;
   border: none;
   width: 40px;
   height: 40px;
@@ -67,7 +67,7 @@ placeholder{
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 40px;
 }
 
 #contentBox{
@@ -92,9 +92,30 @@ placeholder{
   display: block;
   width: 30%;
   left: 0;
-  margin-top:3%;
 }
 
 .yearLink{
+  margin-left:0;
+  text-decoration: none;
+  color: #8d8d8d;
+}
 
+.yearLink:hover{
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+.sortHeader{
+  margin-top:40px;
+  margin-left:0;
+  margin-right:70px;
+}
+
+.typeLink{
+  margin-left:10px;
+  color: #8d8d8d;
+}
+
+#sortType input[type=checkbox]:checked+label{
+    color: #4f4f4f;
 }
