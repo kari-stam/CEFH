@@ -96,8 +96,9 @@ placeholder{
   display: block;
   width: 30%;
   left: 0;
-  top:0;
+  top:80px;
   height:20%;
+  margin-right: 10px;
 }
 
 .yearLink{
