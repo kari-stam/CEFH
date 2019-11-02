@@ -1,10 +1,29 @@
+
+@media (max-width: 1425px) {
+  img {
+    width:90px;
+    height:119px;
+  }
+  .personbox{
+      display: inline-block;
+      width:119px;
+      margin-right:9%;
+      padding: 5px;
+    }
+
+}
+
+
+@media (min-width: 940px) {
+}
+
 #headerbox{
   padding-top: 20px;
   padding-bottom: 20px;
   background-color:#f5f5f5;
   top: 0px;
   width:100%;
-  height: 280px;
+  height: 10%;
 }
 
 #header{
@@ -18,6 +37,9 @@
 #contentbox{
   margin-left:15%;
   display: block;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
 }
 #contentheader{
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
@@ -35,11 +57,11 @@
   background-color:#f5f5f5;
   top: 0px;
   width:100% !important;
-  height: 920px;
+  height: 80%;
 }
 
 #contentlist{
-  padding-inline-start:0;
+  padding-left:0;
   width: 250px;
 }
 
@@ -48,26 +70,20 @@
   margin-bottom: 10px;
 }
 
-.teamgroups{
+#teamgroups{
   margin-left:7%;
   margin-right: 15%;
   width: 60%;
 }
 
-.personalinfo{
-  list-style-type: none;
-  padding-inline-start:0;
+p{
   color:#4F4F4F;
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
 }
 
-.personalinfo li{
-  width:164px;
-  margin-right:0px;
-}
 
-#coregroup{
+#coregroup, #researchers, #research_affiliates, #administrative_staff, #board, #scientific_advisory_committee {
   margin-top:12px;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
@@ -75,24 +91,91 @@
   letter-spacing: 1px;
 }
 
-a {
+#contentlist a {
   color:#8d8d8d;
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
   text-decoration: none;
 }
 
-a:hover {
+#contentlist a:hover {
   color:#4F4F4F;
   text-decoration: none;
+}
+
+.grouping{
+  margin-bottom:10%;
+}
+
+.personbox{
+  display: inline-block;
+  width:164px;
+  margin-right:9%;
+  padding: 5px;
+}
+.personbox:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:none;
 }
 
 img {
   width:164px;
   height:218px;
-  margin-right:70px;
 }
 
-.lastimg{
-  margin-right:0px;
+.third_in_row{
+  margin-right:0px ;
+}
+
+
+.list li::before {
+  content: "\2022";  /* \2022 is the CSS Code/unicode for a bullet */
+  color: #68c394;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.1em;
+  margin-left: -0.8em;
+  margin-top:-0.3em;
+  position: absolute;
+}
+
+.list li {
+ margin-bottom: 15px;
+}
+
+ .list{
+  position: relative;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 12pt;
+  list-style-type:none;
+  margin-bottom: 100px;
+  padding-left: 20px;
+}
+
+
+@keyframes domino{
+    0%{
+        opacity: 0;
+        }
+    56%{
+        }
+    100%{
+        opacity: 1;
+        }
+}
+
+.personbox {
+    animation: domino 0.8s 1 0s ease-in;
+}
+
+#top_management_group{
+  text-decoration: underline;
 }
