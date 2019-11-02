@@ -10,24 +10,39 @@
     <body>
       <!--Element for the top nav bar-->
       <div id="menu"></div>
-      <!--Adding JavaScript for making the year and type navbar work-->
+
+      <!--Adding JavaScript for making the year and type sorting work-->
       <script src="js/table.js"></script>
+
+      <!--Headerbox for whtie area-->
       <div id="headerbox">
         <h1 id="header"> Publications at the Centre of Fertility and Health </h1>
       </div>
-        <div id="srcBox">
-          <input type="text" placeholder="Publications search.." id="srcText">
-          <input type="submit" value="" id="srcButton" onclick="check()">
-        </div>
+
+      <!--Search bar-->
+      <div id="srcBox">
+        <input type="text" placeholder="Publications search.." id="srcText">
+        <input type="submit" value="" id="srcButton" onclick="check()">
+      </div>
+
+      <!--Paragraph with link to the people page-->
       <p class="bodytext1" id="peopleText"> For a complete list of publications from each centre member, please go to <a href="people.html">people</a></p>
+
+      <!--Warapper including the vertical nav bar and the list of publications-->
       <div id="wrapper">
+
+        <!--Vertical nav bar with year and type-->
         <div id="navbar">
+
+          <!--Links that takes you to the desired year of publication-->
           <div id="sortYear">
             <h3 class="subheader2 sortHeader">Year of publication</h3>
                 <p><a href="#2019" class="bodytext1 yearLink">2019</a></p>
                 <p><a href="#2018" class="bodytext1 yearLink">2018</a></p>
                 <p><a href="#2017" class="bodytext1 yearLink">2017</a></p>
           </div>
+
+          <!--Checkboxes for sorting the publications by type-->
           <div id="sortType">
             <h3 id="type" class="subheader2 sortHeader">Type</h3>
                 <p><input type="checkbox" id="scientific" class="typeBox" onclick="sortBoxes(); sortPublications()"><label for="scientific" class="bodytext1 typeLink">Scientific article</label></p>
@@ -36,6 +51,8 @@
                 <p><input type="checkbox" id="reports" class="typeBox" onclick="sortBoxes(); sortPublications()"><label for="reports" class="bodytext1 typeLink">Reports</label></p>
           </div>
         </div>
+
+        <!--Content of publications, divided by year, including classes for type -->
         <div id="contentBox">
             <div id="2019" class="year">
                 <h2 class="yearHeader">2019</h2>
@@ -107,6 +124,7 @@
             </div>
           </div>
       </div>
+      <!--Javascript for making header and footer-->
       <script src="js/header+footer.js"></script>
     </body>
 </html>
