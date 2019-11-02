@@ -42,7 +42,7 @@
    /*top: 55px;*/
 }
 
-#search{
+#searchNews{
     position: absolute;
     background-color: #f5f5f5;
     border: none;
@@ -52,7 +52,7 @@
     display: block;
 }
 
-#searchButton{
+#searchButtonNews{
     position: absolute;
     display: block;
     background-color: #f5f5f5;
@@ -63,7 +63,7 @@
     right: 0;
 }
 
-#searchButton img{ /*her må det også gjøres noe så img. havner midt i søkefeltet*/
+#searchButtonNews img{ /*her må det også gjøres noe så img. havner midt i søkefeltet*/
     position: relative;
     width: 20px;
     height: 20px;
@@ -71,12 +71,12 @@
 
 /*Main content*/
 
+
 #newsContent{
     /*flex*/
     display: flex;
     /*flex-wrap: wrap-reverse;*/
     flex-direction: row;
-    height: 400px;
     /*Other shit*/
     margin-left: 15%;
     margin-right: 15%;
@@ -84,31 +84,75 @@
     height: 100%
 }
 
-    /*Three main parts of content*/
+    /*Filter*/
+    .filter{
+        width: 18%;
+        background-color: red;
+        /*flexing*/
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        
+    }
+    div.filter * {
+        color: blue;
+        margin-bottom: 5px;
+        margin-top:
+    }
+
+    #filterHeader{
+
+    }
+
+    /*Two main parts of content*/
+    #mainShit{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        width: 100%;
+    }
 
     /*Links at top*/
     #links{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
     }
-
-
+        /*Sites*/
         #sites{
-            /*position of this box*/
+            display: flex;
+            flex-direction: row;
+            margin-right:auto;
         }
 
+            #eventLink,#publicationLink{
+                margin-right: 30px;
+            }
+
+        /*Years*/
         #yearsInner{
+            display: flex;
+            flex-direction: row;
         }
 
-        .year:hover{
-            color: #68c394
-        }
+            .year{
+                color: #68c394;
+                margin-left: 15px;
+            }
 
 
     /*main content*/
     #mainContent{
-
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin-right: 55px;
     }
 
-    /*Filter*/
-    #filter{
-        width: 50%
-    }
+        .dropdown{
+            height: 35px;
+            margin-bottom: 15px;
+            background-color: #68c394;
+        }
+
+    
