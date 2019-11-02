@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(e){
               +`<a href="news.html">News</a>`
               +`<div id="searchBox">`
                 +`<input type="text" placeholder="Search.." id="searchText">`
-                +`<input type="submit" value="" id="searchButton" onclick="check()">`
+                +`<input type="submit" value="" id="searchButton">`
               +"</div>"
             +"</div>"
         +"</div>"
