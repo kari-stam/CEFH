@@ -1,5 +1,18 @@
-@media (max-width: 940px) {
+
+@media (max-width: 1425px) {
+  img {
+    width:90px;
+    height:119px;
+  }
+  .personbox{
+      display: inline-block;
+      width:119px;
+      margin-right:9%;
+      padding: 5px;
+    }
+
 }
+
 
 @media (min-width: 940px) {
 }
@@ -24,7 +37,6 @@
 #contentbox{
   margin-left:15%;
   display: block;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   align-self: flex-start;
@@ -45,11 +57,11 @@
   background-color:#f5f5f5;
   top: 0px;
   width:100% !important;
-  height: 5000px;
+  height: 80%;
 }
 
 #contentlist{
-  padding-inline-start:0;
+  padding-left:0;
   width: 250px;
 }
 
@@ -142,11 +154,10 @@ img {
  .list{
   position: relative;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: medium;
   font-size: 12pt;
   list-style-type:none;
   margin-bottom: 100px;
-  padding-inline-start: 20px;
+  padding-left: 20px;
 }
 
 
@@ -157,11 +168,14 @@ img {
     56%{
         }
     100%{
-        transform: rotate(xx);
         opacity: 1;
         }
 }
 
 .personbox {
     animation: domino 0.8s 1 0s ease-in;
+}
+
+#top_management_group{
+  text-decoration: underline;
 }

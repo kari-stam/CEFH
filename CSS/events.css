@@ -14,7 +14,7 @@
 
 #wrapper {
   position: relative;
-  margin-left: 20%;
+  margin-left: 30%;
   margin-right: 10%;
   display: block;
 
@@ -22,13 +22,21 @@
 
 .filterbox {
   position: absolute;
-  margin-left: 3%
+  margin-left: 7%;
+  margin-right: 5%;
 }
 
 .month {
+  background-color: #F5F5F5;
+  border: none;
 
 }
 
-.eventboxes {
-  
+.eventcontent {
+  padding-bottom: 5%;
+  position: relaive;
+}
+
+.monthheader {
+  margin-left: 2%;
 }
