@@ -1,3 +1,24 @@
-.container {
-  marg
+article {
+  margin: auto;
+  width: 100%;
+}
+
+.newsContainer {
+  display: flex;
+  height: 300px;
+}
+
+.newsBox {
+  width: 25%;
+  margin: auto;
+}
+
+.recContainer {
+  display: flex;
+  height: 300px;
+}
+
+.upevContainer {
+  display: flex;
+  height: 300px;
 }
