@@ -149,10 +149,22 @@
         margin-right: 55px;
     }
 
+        .month{
+            margin-bottom: 25px;
+        }
+
         .dropdown{
             height: 35px;
             margin-bottom: 15px;
             background-color: #68c394;
         }
 
+        .articleBox{
+            display: flex;
+            flex-flow: row;
+        }
+
+
+        /*Bør egt se på andre måter å organisere dropdown å menyene på.
+        artiklene trenger ikke å nestes under dropdownen - nødvendigvis*/
     
