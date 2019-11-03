@@ -1,37 +1,71 @@
-<DOCTYPE html>
-    <html lang='en'>
-        <head>
-            <title>News</title>
-            <meta charset='UTF-8' />
-            <link rel='stylesheet' type='text/css' href='css/styling.css'>
-            <link rel='stylesheet' type='text/css' href='css/news.css'>
-            <link href="https://fonts.googleapis.com/css?family=Crimson%20Text" rel="stylesheet">
-        </head>
-        <body>
-            <div class='white'>
-                <h1 id='header'>News</h1>
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>News</title>
+        <meta charset='UTF-8' />
+        <link rel='stylesheet' type='text/css' href='css/styling.css'>
+        <link rel='stylesheet' type='text/css' href='css/news.css'>
+        <link href="https://fonts.googleapis.com/css?family=Crimson%20Text" rel="stylesheet">
+    </head>
+    <body>
+        <div class='white'>
+            <h1 id='header'>News</h1>
+        </div>
+        <div class='searchField'>
+            <div id='searchBoxNews'>
+                <input type='text' placeholder='Search news...' id='searchNews'>
+                <button type='submit' id='searchButtonNews'>
+                    <!--<img src='img/søk.png'>-->
+                </button>
             </div>
-            <div class='search_field'>
-                <div id='searchBox_news'>
-                    <input type='text' placeholder='Search news...' id='search'>
-                    <button type='submit'id='searchButton'>
-                        <!--<img src='img/søk.png'>-->
-                    </button>
-                </div>
+        </div>
+        <div id='newsContent'>
+            <div class='filter'>
+                <h2 id='filterHeader'>Filter</h2>
+                <p>General</p>
+                <p>Publications</p>
+                <p>Research Findings</p>
+                <p>Events</p>
             </div>
-            <div class='links'>
-                <div class='site_links'>
-                    <div id='event_link'>EVENTS</div>
-                    <div id='publications'>PUBLICATIONS</div>
+            <div id='mainShit'>
+                <div id='links'>     
+                    <div id='sites'>
+                        <div id='eventLink'>EVENTS</div>
+                        <div id='publicationsLink'>PUBLICATIONS</div>
+                    </div>
+                    <div id='yearsInner'>
+                        <div class='year' id='year1'> 2019 </div>
+                        <div class='year' id='year2'> 2018 </div>
+                        <div class='year' id='year3'> 2017 </div>
+                    </div>
                 </div>
-                <div class='years'>
-                    <div class='years_inner'>
-                        <div id='year1'> 2019 </div>
-                        <div id='year2'> 2018 </div>
-                        <div id='year3'> 2017 </div>
+                <div id='mainContent'>
+                    <div class='month'>
+                        <div class='dropdown'>
+                            <div class='month'>September</div>
+                        </div>
+                        <div class='articleBox'>
+                            <img ...>
+                            <p>text</p>
+                        </div>
+                    </div>
+                    <div class='month'>
+                        <div class='dropdown'>
+                            <div class='month'>September</div>
+                        </div>
+                    </div>
+                    <div class='month'>
+                        <div class='dropdown'>
+                            <div class='month'>September</div>
+                        </div>
+                    </div>
+                    <div class='month'>
+                        <div class='dropdown'>
+                            <div class='month'>September</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </body>
-    </html>
-</DOCTYPE>
+        </div>
+    </body>
+</html>
