@@ -24,11 +24,22 @@
         </div>
         <div id='newsContent'>
             <div class='filter'>
-                <h2 id='filterHeader'>Filter</h2>
-                <span>General</span>
-                <span>Publications</span>
-                <span>Research Findings</span>
-                <span>Events</span>
+                <p id='filterHeader' class='subheader1'>Filter</p>
+                <span>
+                    <input type="checkbox" id="general" class="filterBox" onclick="sortBoxes(); sortPublications()">
+                    <label for="scientific" class="bodytext1 typeLink">General</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="publications" class="filterBox" onclick="sortBoxes(); sortPublications()">
+                    <label for="scientific" class="bodytext1 typeLink">Publications</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="researchFindings" class="filterBox" onclick="sortBoxes(); sortPublications()">
+                    <label for="scientific" class="bodytext1 typeLink">Research findings</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="events" class="filterBox" onclick="sortBoxes(); sortPublications()">
+                    <label for="scientific" class="bodytext1 typeLink">Events</label></span>
             </div>
             <div id='mainShit'>
                 <div id='links' class='bodytext2'>     
@@ -48,6 +59,104 @@
                         <p class='monthName'>November 2019</p>
                     </button>
                         <!-- Article 1.1 -->
+                        <div class='newsArticle'>
+                            <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
+                            <div class='aTextBox'>
+                                <div class='newsLabels bodytext1'>
+                                    <span class='kind'>TYPE</span>
+                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                </div>
+                                <div class='articleTitle subheader1'>
+                                    <span class='articleTitleText'>Article 1</span>
+                                </div>
+                                <div class='aText bodytext1'>
+                                    <span>
+                                        Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Article 1.2 -->
+                        <div class='newsArticle'>
+                            <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
+                            <div class='aTextBox'>
+                                <div class='newsLabels bodytext1'>
+                                    <span class='kind'>TYPE</span>
+                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                </div>
+                                <div class='articleTitle subheader1'>
+                                    <span class='articleTitleText'>Article 2</span>
+                                </div>
+                                <div class='aText bodytext1'>
+                                    <span>
+                                        Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Article 1.3 -->
+                        <div class='newsArticle'>
+                            <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
+                            <div class='aTextBox'>
+                                <div class='newsLabels bodytext1'>
+                                    <span class='kind'>TYPE</span>
+                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                </div>
+                                <div class='articleTitle subheader1'>
+                                    <span class='articleTitleText'>Article 3</span>
+                                </div>
+                                <div class='aText bodytext1'>
+                                    <span>
+                                        Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 2nd month -->
+                    <button type='button' class='dropdown bodytext1' id=''>
+                        <p class='monthName'>October 2019</p>
+                    </button>
+                        <!-- Article 2.1 -->
+                        <div class='newsArticle'>
+                            <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
+                            <div class='aTextBox'>
+                                <div class='newsLabels bodytext1'>
+                                    <span class='kind'>TYPE</span>
+                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                </div>
+                                <div class='articleTitle subheader1'>
+                                    <span class='articleTitleText'>Article 1</span>
+                                </div>
+                                <div class='aText bodytext1'>
+                                    <span>
+                                        Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Article 2.2 -->
+                        <div class='newsArticle'>
+                            <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
+                            <div class='aTextBox'>
+                                <div class='newsLabels bodytext1'>
+                                    <span class='kind'>TYPE</span>
+                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                </div>
+                                <div class='articleTitle subheader1'>
+                                    <span class='articleTitleText'>Article 2</span>
+                                </div>
+                                <div class='aText bodytext1'>
+                                    <span>
+                                        Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 2nd month -->
+                    <button type='button' class='dropdown bodytext1' id=''>
+                        <p class='monthName'>September 2019</p>
+                    </button>
+                        <!-- Article 2.1 -->
                         <div class='newsArticle'>
                             <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
                             <div class='aTextBox'>

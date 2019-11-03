@@ -130,16 +130,27 @@ margin: 0;
     /*Filter*/
     .filter{
         width: 18%;
-        background-color: red;
+        background-color: rgb(198, 238, 227);
         /*flexing*/
         display: flex;
         flex-direction: column;
         margin-right: 0;
         align-self: flex-start;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 132px;
         
     }
+
+        .filterBox{
+
+        }
+
+        .filterLink{
+        }
+
         div.filter * {
-            color: blue;
+            color: bl#8d8d8d;
             margin-bottom: 5px;
         }
 
@@ -230,11 +241,14 @@ margin: 0;
             margin-right: 0;
             margin-left: 0;
         }
+                /*pseudo*/
+                .dropdown:hover{
+                    color: #68c394;
+                }
 
             /*nested*/
             .monthName{
                 margin-left: 20px;
-                /*align-self: center;*/
             }
 
             .dropSymbol{
