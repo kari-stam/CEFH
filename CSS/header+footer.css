@@ -1,3 +1,36 @@
+@media screen and (max-width: 768px){
+  .navbar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: column;
+  }
+
+  .navbar a{
+
+  }
+}
+
+@media screen and (min-width: 769px){
+  .navbar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+}
+
+
 #navwrap{
   position: relative;
   width:100%;
@@ -8,18 +41,6 @@
   position:fixed;
   top: 0;
   z-index:100;
-}
-
-.navbar {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-
 }
 
 .navbar a {
