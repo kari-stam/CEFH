@@ -25,31 +25,34 @@
 
 /*Search*/
 
-.search_field{
+.searchField{
     display: flex;
     justify-content: center;
     margin-left: 15%;
     margin-right: 15%;
     padding: 0;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: #f5f5f5;
 }
 
-#searchBox_news{
+#searchBoxNews{
     position: relative;
     width: 100%;
    /*top: 55px;*/
 }
 
-#search{
+#searchNews{
     position: absolute;
     background-color: #f5f5f5;
     border: none;
-    padding-left: 30px;
-    width: 100%;
+    margin-left: 2%; /*Hvordan få til dette uten at select-omrisset også starter etter 2%?*/
+    width: 98%;
     height: 50px;
     display: block;
 }
 
-#searchButton{
+#searchButtonNews{
     position: absolute;
     display: block;
     background-color: #f5f5f5;
@@ -60,29 +63,108 @@
     right: 0;
 }
 
-#searchButton img{ /*her må det også gjøres noe så img. havner midt i søkefeltet*/
+#searchButtonNews img{ /*her må det også gjøres noe så img. havner midt i søkefeltet*/
     position: relative;
     width: 20px;
     height: 20px;
 }
 
-/*hyperlinks to other sites*/
-.links{
-    position: relative;
-    left: 35%;
-    width: 50%;
-}
-.site_links{
-    position: absolute;
+/*Main content*/
+
+
+#newsContent{
+    /*flex*/
     display: flex;
-}
-.years{
-    display: flex;
-    justify-content: flex-end;
+    /*flex-wrap: wrap-reverse;*/
+    flex-direction: row;
+    /*Other shit*/
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #f5f5f5;
+    height: 100%
 }
 
-.years_inner{
-    display: flex;
-    justify-content: space-between;
-}
+    /*Filter*/
+    .filter{
+        width: 18%;
+        background-color: red;
+        /*flexing*/
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        
+    }
+    div.filter * {
+        color: blue;
+        margin-bottom: 5px;
+        margin-top:
+    }
 
+    #filterHeader{
+
+    }
+
+    /*Two main parts of content*/
+    #mainShit{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    /*Links at top*/
+    #links{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+        /*Sites*/
+        #sites{
+            display: flex;
+            flex-direction: row;
+            margin-right:auto;
+        }
+
+            #eventLink,#publicationLink{
+                margin-right: 30px;
+            }
+
+        /*Years*/
+        #yearsInner{
+            display: flex;
+            flex-direction: row;
+        }
+
+            .year{
+                color: #68c394;
+                margin-left: 15px;
+            }
+
+
+    /*main content*/
+    #mainContent{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin-right: 55px;
+    }
+
+        .month{
+            margin-bottom: 25px;
+        }
+
+        .dropdown{
+            height: 35px;
+            margin-bottom: 15px;
+            background-color: #68c394;
+        }
+
+        .articleBox{
+            display: flex;
+            flex-flow: row;
+        }
+
+
+        /*Bør egt se på andre måter å organisere dropdown å menyene på.
+        artiklene trenger ikke å nestes under dropdownen - nødvendigvis*/
+    
