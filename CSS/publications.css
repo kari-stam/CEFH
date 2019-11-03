@@ -1,7 +1,9 @@
+body{
+}
 
 #peopleText{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 #srcBox{
@@ -69,13 +71,15 @@ placeholder{
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 10%;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 #contentBox{
   display: block;
   width: 70%;
   right: 0;
+  top: 80px;
+  overflow: hidden;
 }
 #wrapper{
   margin-left: 15%;
@@ -96,7 +100,7 @@ placeholder{
   display: block;
   width: 30%;
   left: 0;
-  top:80px;
+  top:30px;
   height:20%;
   margin-right: 10px;
 }
@@ -113,7 +117,7 @@ placeholder{
 }
 
 .sortHeader{
-  margin-top:40px;
+  margin-top:30px;
   margin-left:0;
   margin-right:70px;
 }
@@ -125,4 +129,13 @@ placeholder{
 
 #sortType input[type=checkbox]:checked+label{
     color: #4f4f4f;
+}
+
+.scroll{
+  display:block;
+  height: 90px;
+}
+
+#yearOfPub{
+  margin-top: 90px;
 }

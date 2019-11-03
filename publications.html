@@ -36,10 +36,10 @@
 
           <!--Links that takes you to the desired year of publication-->
           <div id="sortYear">
-            <h3 class="subheader2 sortHeader">Year of publication</h3>
-                <p><a href="#2019" class="bodytext1 yearLink">2019</a></p>
-                <p><a href="#2018" class="bodytext1 yearLink">2018</a></p>
-                <p><a href="#2017" class="bodytext1 yearLink">2017</a></p>
+            <h3 class="subheader2 sortHeader" id="yearOfPub">Year of publication</h3>
+                <p><a href="#scroll2019" class="bodytext1 yearLink">2019</a></p>
+                <p><a href="#scroll2018" class="bodytext1 yearLink">2018</a></p>
+                <p><a href="#scroll2017" class="bodytext1 yearLink">2017</a></p>
           </div>
 
           <!--Checkboxes for sorting the publications by type-->
@@ -54,6 +54,7 @@
 
         <!--Content of publications, divided by year, including classes for type -->
         <div id="contentBox">
+          <div id="scroll2019" class="scroll"></div>
             <div id="2019" class="year">
                 <h2 class="yearHeader">2019</h2>
                   <div class="article scientific">
@@ -77,7 +78,8 @@
                   </div>
                   <br>
             </div>
-            <div id="2018" class="year">
+            <div id="scroll2018" class="scroll"></div>
+              <div id="2018" class="year">
                 <h2 class="yearHeader">2018</h2>
                 <div class="article scientific">
                   <p class="articleTitle">Special issue dedicated to Odd O. Aalen.</p>
@@ -100,7 +102,8 @@
                 </div>
                 <br>
             </div>
-            <div id="2017" class="year">
+            <div id="scroll2017" class="scroll"></div>
+              <div id="2017" class="year">
                 <h2 class="yearHeader">2017</h2>
                 <div class="article scientific">
                   <p class="articleTitle">Special issue dedicated to Odd O. Aalen.</p>
@@ -124,6 +127,10 @@
             </div>
           </div>
       </div>
+
+      <!--Element for the footer-->
+      <div id="footer"></div>
+
       <!--Javascript for making header and footer-->
       <script src="js/header+footer.js"></script>
     </body>
