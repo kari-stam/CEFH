@@ -92,6 +92,7 @@
         display: flex;
         flex-direction: column;
         margin-right: 0;
+        align-self: flex-start;
         
     }
     div.filter * {
@@ -197,6 +198,9 @@
             background-color: #f5f5f5;
             height: 200px;
             margin-bottom: 25px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap:
         }
 
         
