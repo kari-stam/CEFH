@@ -1,7 +1,7 @@
 /*fonts*/
 #header {
     font-family: "Crimson Text", serif;
-    font-size: 45pt;
+    font-size: 45px;
     font-variant: normal;
     font-weight: 100;
     margin: 0;
@@ -10,7 +10,7 @@
 .subheader1 {
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 font-weight:lighter;
-font-size: 26pt;
+font-size: 24px;
 letter-spacing: 1px;
 margin: 0;
 }
@@ -18,7 +18,7 @@ margin: 0;
 .subheader2 {
 font-family: futura, "Trebuchet MS", Arial, sans-serif;
 font-weight:lighter;
-font-size: 18pt;
+font-size: 18px;
 letter-spacing: 1px;
 margin: 0;
 }
@@ -26,25 +26,27 @@ margin: 0;
 .bodytext1 {
 font-family: futura, "Trebuchet MS", Arial, sans-serif;
 font-weight: lighter;
-font-size: 12pt;
+font-size: 12px;
 margin: 0;
 }
 
 .bodytext2 {
 font-family: futura, "Trebuchet MS", Arial, sans-serif;
 font-weight:lighter;
-font-size: 14pt;
+font-size: 14px;
 margin: 0;
 }
 
 /*Header*/
+
 .white{
     background-color:#f5f5f5;
-    height: 250px;
+    height: 215px;
     margin-bottom: 55px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 80px;
 }
 
 #headText{
@@ -71,6 +73,7 @@ margin: 0;
     height: 50px;
     margin-bottom: 50px;
     background-color: #f5f5f5;
+    min-width: 475px;
 }
 
 #searchBoxNews{
@@ -85,10 +88,11 @@ margin: 0;
     margin-left: 2%; /*Hvordan få til dette uten at select-omrisset også starter etter 2%?*/
     width: 98%;
     height: 50px;
-    display: block;
-
+    /*display: block;*/
+    padding: 0;
     border: none;
     outline: none;
+    color: #4f4f4f;
 }
 
 #searchButtonNews{
@@ -212,21 +216,25 @@ margin: 0;
 
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-content: center;
 
             cursor: pointer;
             border: none;
             outline: none;
 
             background-color: #f5f5f5;
+            color: #4f4f4f;
             height: 35px;
 
-            margin-left: -2px;
+            padding: 0;
+            margin-right: 0;
+            margin-left: 0;
         }
 
             /*nested*/
             .monthName{
                 margin-left: 20px;
+                /*align-self: center;*/
             }
 
             .dropSymbol{
@@ -268,13 +276,27 @@ margin: 0;
                         margin-right: 10%;
                         justify-content: space-between;
                         color: #8d8d8d;
+                        margin-bottom: 20px;
                     }
 
-                        .kind{
-                            justify-self: flex-start;
-                        }
+                    /*title*/
+                    .articleTitle{
+                        margin-left: 7%;
+                        margin-right: 7%;
+                        border-bottom: 1px solid #8d8d8d;
+                        margin-bottom: 20px;
+                    }
 
-                        .aText{
-                            font-size: calc(12pt + 1vw);
-                        }
+                    .articleTitle * {
+                        margin-left: 3%;
+                    }
+
+                    .aText{
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        margin-bottom: 20px;
+                        overflow: hidden;
+                    }
+
+
     

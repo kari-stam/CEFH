@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Crimson%20Text" rel="stylesheet">
     </head>
     <body>
+        <div id="menu"></div>
         <div class='white'>
             <div id=headText>
                 <p id='header'>News</p>
@@ -15,7 +16,7 @@
         </div>
         <div class='searchField'>
             <div id='searchBoxNews'>
-                <input type='text' placeholder='Search news...' id='searchNews'>
+                <input type='text' placeholder='Search news...' class='bodytext1' id='searchNews'>
                 <button type='submit' id='searchButtonNews'>
                     <!--<img src='img/søk.png'>-->
                 </button>
@@ -24,10 +25,10 @@
         <div id='newsContent'>
             <div class='filter'>
                 <h2 id='filterHeader'>Filter</h2>
-                <p>General</p>
-                <p>Publications</p>
-                <p>Research Findings</p>
-                <p>Events</p>
+                <span>General</span>
+                <span>Publications</span>
+                <span>Research Findings</span>
+                <span>Events</span>
             </div>
             <div id='mainShit'>
                 <div id='links' class='bodytext2'>     
@@ -43,7 +44,7 @@
                 </div>
                 <div id='mainContent'>
                     <!-- 1st month -->
-                    <button type='button' class='dropdown' id='month1'>
+                    <button type='button' class='dropdown bodytext1' id=''>
                         <p class='monthName'>November 2019</p>
                     </button>
                         <!-- Article 1.1 -->
@@ -52,9 +53,14 @@
                             <div class='aTextBox'>
                                 <div class='newsLabels bodytext1'>
                                     <span class='kind'>TYPE</span>
+                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                </div>
+                                <div class='articleTitle subheader1'>
+                                    <span class='articleTitleText'>Article 1</span>
+                                </div>
+                                <div class='aText bodytext1'>
                                     <span>
-                                        <!--<span class='published'>Published:</span>-->
-                                        <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                        Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article. Short synopsis of the article.
                                     </span>
                                 </div>
                             </div>
@@ -62,5 +68,7 @@
                 </div>
             </div>
         </div>
+        <div id='footer'></div>
+        <script src="js/header+footer.js"></script>
     </body>
 </html>
