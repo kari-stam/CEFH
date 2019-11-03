@@ -101,5 +101,47 @@ img{
   padding-left: 30px;
   height: 40px;
   left: 0;
+}
+#footwrap{
+  margin: 0 15% 0 15%;
+  display: flex;
+  height:300px;
+  bottom: 0;
+}
 
+#footerImg{
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-right: 5%;
+}
+
+.footerH{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 11pt;
+  letter-spacing: 1px;
+  margin-left: 10%;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.footerP{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 9pt;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+#contactText{
+  width: 70%;
+  border-left: solid 2px #68c394;
+  margin-top: auto;
+  margin-bottom: auto;
+  height:auto;
 }

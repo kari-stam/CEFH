@@ -14,4 +14,19 @@ document.addEventListener("DOMContentLoaded", function(e){
               +"</div>"
             +"</div>"
         +"</div>"
+  const footer=document.getElementById("footer");
+        footer.innerHTML=`<div id="footwrap">`
+        +'<img id="footerImg" src="./img/Logo_text.png"></img>'
+        +'<div id="contactText">'
+          +'<h3 class="footerH">Postal adress</h3>'
+          +'<p class="footerP">Norwegian Institute of Public Health</p>'
+          +'<p class="footerP">Centre for Fertility and Health</p>'
+          +'<p class="footerP">P.O. box 222 Skøyen</p>'
+          +'<p class="footerP">N-0213 Oslo, Norway</p>'
+          +'<br>'
+          +'<h3 class="footerH">Visiting adress</h3>'
+          +'<p class="footerP">Norwegian Institute of Public Health</p>'
+          +'<p class="footerP">Centre for Fertility and Health</p>'
+          +'<p class="footerP">Marcus Thranes gate 2, Oslo</p>'
+        +'</div> '
 });
