@@ -247,6 +247,15 @@
                 }
 
             /*nested*/
+
+            .dropCont{
+                display: flex;
+                flex-direction: column;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s linear;
+            }
+
             .monthName{
                 margin-left: 20px;
             }
@@ -265,6 +274,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            overflow: hidden;
         }
 
             /*content*/
@@ -309,7 +319,7 @@
                         margin-left: 10%;
                         margin-right: 10%;
                         margin-bottom: 20px;
-                        overflow: hidden;
+                        /*overflow: hidden;*/
                     }
 
 
