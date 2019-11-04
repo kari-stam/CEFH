@@ -77,14 +77,13 @@ placeholder{
 #contentBox{
   display: block;
   width: 70%;
-  right: 0;
+  left:0;
   top: 80px;
   overflow: hidden;
 }
 #wrapper{
   margin-left: 15%;
   margin-right: 15%;
-  position: relative;
   display: flex;
   margin-top: 30px;
 }
