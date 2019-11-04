@@ -1,23 +1,45 @@
-
-let uncheckedBoxes=["scientific","chapters","books","reports"];
 let checkedBoxes=[];
+let uncheckedBoxes=[];
+
+const checkboxes=document.getElementsByClassName("checkbox");
+
+defineUnchecked();
+
+for (var i=0; i<checkboxes.length; i++){
+  let ide=checkboxes[i].id;
+  document.getElementById(ide).addEventListener("click", main);
+}
+
+function main(){
+  sortBoxes();
+  sortPublications();
+}
+
+
+function defineUnchecked(){
+  for (var i=0; i<checkboxes.length; i++){
+    let ident=checkboxes[i].id;
+    uncheckedBoxes.push(ident);
+  }
+}
+
 
 function sortBoxes(){
-  const checkboxes=document.getElementsByClassName("typeBox");
-  uncheckedBoxes=["scientific","chapters","books","reports"];
+  uncheckedBoxes=[];
+    for (var i=0; i<checkboxes.length; i++){
+      let ident=checkboxes[i].id;
+      uncheckedBoxes.push(ident);
+    }
   checkedBoxes=[];
 
   for (i=0; i<checkboxes.length; i++){
     let ident=checkboxes[i].id;
-    console.log(i)
     if (checkboxes[i].checked==true){
       let index = uncheckedBoxes.indexOf(ident);
       if(index!== -1) uncheckedBoxes.splice(index, 1);
       checkedBoxes.push(ident);
     }
   }
-
-  /*console.log(checkedBoxes);*/
 }
 
 
@@ -25,10 +47,9 @@ function sortBoxes(){
 function sortPublications(){
   console.log(uncheckedBoxes, "uncheckedBoxes");
   console.log(checkedBoxes, "checkedBoxes");
-  /*document.getElementById("contentBox").querySelectorAll*/
 
   if (uncheckedBoxes.length==4){
-    for (i=0; i<uncheckedBoxes.length; i++){
+    for (var i=0; i<uncheckedBoxes.length; i++){
         let divs =document.getElementsByClassName(uncheckedBoxes[i]);
         for( div of divs){
           div.style.display = "";
