@@ -1,24 +1,186 @@
-article {
+body {
   margin: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.newsContainer {
+
+/*FRONT*/
+#frontContainer {
+  order: 0;
+  flex-basis: auto;
+  margin: auto;
+  padding: 12% 15% 8% 15%;
+}
+
+#onOneRow_front {
   display: flex;
-  height: 300px;
+}
+
+#onOneRow_front div {
+  order: 0;
+  width: 800px;
+}
+
+#onOneRow_front img {
+  order: 1;
+  flex-basis: 500px;
+  margin: auto;
+}
+
+/*img*/
+#onOneRow_front img {
+  order: 1;
+  width: 100px;
+}
+
+#NCoE_logo {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  margin: auto;
+  padding: 20px 0 0 0;
+}
+
+/*txt*/
+#frontFont1 {
+  font-family: "Crimson Text", serif;
+  font-size: 35pt;
+  font-variant: normal;
+  font-weight: 100;
+}
+
+#frontFont2 {
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 16pt;
+  letter-spacing: 1px;
+}
+
+#frontFont3 {
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 14pt;
+  width: 80%;
+}
+
+/*NEWS*/
+#newsContainer {
+  /*border: 3px red solid;*/
+  order: 1;
+}
+
+#newsSlide {
+  display: flex;
+  margin: auto;
+  height: 450px;
+  background-color: #f5f5f5;
+  justify-content: space-around;
 }
 
 .newsBox {
-  width: 25%;
+  flex-basis: 25%;
+  height: 100%;
+  margin: auto;
+  background-color: #f5f5f5;
+}
+
+/*img*/
+.newsBox img {
+  width: 100%;
+}
+
+/*txt*/
+.newsFont1 {
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  margin: 0% 5%;
+}
+
+.newsFont2 {
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 10pt;
+  margin: 5%;
+}
+
+.newsFont3 {
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 9pt;
+  color: white grey;
+  margin: 3% 5% 5% 5%;
+}
+
+/*RECENT PUBLICATIONS*/
+#recContainer {
+  /*border: 3px red solid;*/
+  order: 2;
   margin: auto;
 }
 
-.recContainer {
-  display: flex;
-  height: 300px;
+.pubBox {
+  flex-basis: 25%;
+  height: 80%;
+  margin: auto;
+  border-left: 2px rgb(104,195,148) solid;
 }
 
-.upevContainer {
+#onOneRow_rec {
   display: flex;
-  height: 300px;
+  margin: auto;
+  padding: 100px 100px 100px 100px;
+}
+
+/*txt*/
+.headerFont {
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 16pt;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: auto;
+  padding: 100px 0 50px 0;
+}
+
+/*UPCOMING EVENTS*/
+
+#upevContainer {
+  /*border: 3px red solid;*/
+  order: 3;
+  margin: auto;
+  background-color: #f5f5f5;
+}
+
+#onOneRow_upev {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 170px 100px 160px;
+}
+
+#upevBox {
+  width: 150px;
+  text-align: center;
+}
+
+/*img*/
+#upevImg {
+  margin: auto;
+  width: 900px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/*txt*/
+.upevFont {
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 12pt;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }

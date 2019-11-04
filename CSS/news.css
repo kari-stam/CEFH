@@ -1,17 +1,56 @@
-/*Header*/
-.white{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color:#f5f5f5;
-    top: 100px;
-    width:100%;
-    height: 250px;
-    margin-bottom: 155px;
-    position: relative;
+/*fonts*/
+#header {
+    font-family: "Crimson Text", serif;
+    font-size: 45px;
+    font-variant: normal;
+    font-weight: 100;
+    margin: 0;
+}
+  
+.subheader1 {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight:lighter;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 0;
 }
 
-#header{
-    margin-left: 220px;
+.subheader2 {
+    font-family: futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight:lighter;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.bodytext1 {
+    font-family: futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    margin: 0;
+}
+
+.bodytext2 {
+    font-family: futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight:lighter;
+    font-size: 14px;
+    margin: 0;
+}
+
+/*Header*/
+
+.white{
+    background-color:#f5f5f5;
+    height: 215px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#headText{
+    margin-left: 28.75%;
 }
 
 .headerbox2{
@@ -34,12 +73,12 @@
     height: 50px;
     margin-bottom: 50px;
     background-color: #f5f5f5;
+    min-width: 475px;
 }
 
 #searchBoxNews{
     position: relative;
     width: 100%;
-   /*top: 55px;*/
 }
 
 #searchNews{
@@ -49,7 +88,11 @@
     margin-left: 2%; /*Hvordan få til dette uten at select-omrisset også starter etter 2%?*/
     width: 98%;
     height: 50px;
-    display: block;
+    /*display: block;*/
+    padding: 0;
+    border: none;
+    outline: none;
+    color: #4f4f4f;
 }
 
 #searchButtonNews{
@@ -80,29 +123,36 @@
     /*Other shit*/
     margin-left: 15%;
     margin-right: 15%;
-    background-color: #f5f5f5;
+    background-color: #EAF1EF;
     height: 100%
 }
 
     /*Filter*/
     .filter{
         width: 18%;
-        background-color: red;
+        /*background-color: rgb(198, 238, 227);*/
         /*flexing*/
         display: flex;
         flex-direction: column;
         margin-right: 0;
+        align-self: flex-start;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 132px;
         
     }
-    div.filter * {
-        color: blue;
-        margin-bottom: 5px;
-        margin-top:
-    }
 
-    #filterHeader{
+        .filterBox{
 
-    }
+        }
+
+        .filterLink{
+        }
+
+        div.filter * {
+            color: bl#8d8d8d;
+            margin-bottom: 5px;
+        }
 
     /*Two main parts of content*/
     #mainShit{
@@ -112,33 +162,55 @@
         width: 100%;
     }
 
-    /*Links at top*/
-    #links{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 30px;
-    }
-        /*Sites*/
-        #sites{
+        /*Links at top*/
+        #links{
             display: flex;
             flex-direction: row;
-            margin-right:auto;
+            margin-bottom: 30px;
         }
-
-            #eventLink,#publicationLink{
-                margin-right: 30px;
+            /*Sites*/
+            #sites{
+                display: flex;
+                flex-direction: row;
+                margin-right:auto;
             }
 
-        /*Years*/
-        #yearsInner{
-            display: flex;
-            flex-direction: row;
-        }
+                #eventLink,#publicationLink{
+                    /*margin-right: 30px;*/
+                }
 
-            .year{
-                color: #68c394;
-                margin-left: 15px;
+                .newsLink{
+                    color: #4f4f4f;
+                    margin-bottom: -2px;
+                    margin-right: 30px;
+                    cursor: pointer;
+                }
+
+                    /*pseudo*/
+                    .newsLink:hover{
+                        border-bottom: 2px solid #68c394;
+                    }
+
+            /*Years*/
+            #yearsInner{
+                display: flex;
+                flex-direction: row;
+                margin-right: 20px;
             }
+
+                .year{
+                    color: #8d8d8d;
+                    margin-left: 15px;
+                    cursor: pointer;
+                }
+                
+                    /*pseudo*/
+                    .year:hover{
+                        color: #4f4f4f;
+                    }
+                    .year:active{
+                        color: #4f4f4f;
+                    }
 
 
     /*main content*/
@@ -149,22 +221,96 @@
         margin-right: 55px;
     }
 
-        .month{
-            margin-bottom: 25px;
-        }
-
+        /*dropdowns*/
         .dropdown{
-            height: 35px;
-            margin-bottom: 15px;
-            background-color: #68c394;
-        }
+            margin-bottom: 25px;
 
-        .articleBox{
             display: flex;
-            flex-flow: row;
+            flex-direction: row;
+            align-content: center;
+
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+            background-color: #f5f5f5;
+            color: #4f4f4f;
+            height: 35px;
+
+            padding: 0;
+            margin-right: 0;
+            margin-left: 0;
+        }
+                /*pseudo*/
+                .dropdown:hover{
+                    color: #68c394;
+                }
+
+            /*nested*/
+            .monthName{
+                margin-left: 20px;
+            }
+
+            .dropSymbol{
+                margin-right: 15px;
+                margin-left: auto;
+            }
+        
+        /*articles*/
+        .newsArticle{
+            margin-right: 5%;
+            background-color: #f5f5f5;
+            height: 200px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
+            /*content*/
+            .newsArticle.p{
+                width: 50px;
+            }
 
-        /*Bør egt se på andre måter å organisere dropdown å menyene på.
-        artiklene trenger ikke å nestes under dropdownen - nødvendigvis*/
+                .aImg{
+                    width: 50%;
+                    height: 100%;
+                }
+                /*textBox*/
+                .aTextBox{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    /*labels*/
+                    .newsLabels{
+                        display: flex;
+                        margin-top: 15px;
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        justify-content: space-between;
+                        color: #8d8d8d;
+                        margin-bottom: 20px;
+                    }
+
+                    /*title*/
+                    .articleTitle{
+                        margin-left: 7%;
+                        margin-right: 7%;
+                        border-bottom: 1px solid #8d8d8d;
+                        margin-bottom: 20px;
+                    }
+
+                    .articleTitle * {
+                        margin-left: 3%;
+                    }
+
+                    .aText{
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        margin-bottom: 20px;
+                        overflow: hidden;
+                    }
+
+
     
