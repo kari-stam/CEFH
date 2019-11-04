@@ -246,6 +246,10 @@
                     color: #68c394;
                 }
 
+                .active{
+                    color: #68c394;
+                }
+
             /*nested*/
 
             .dropCont{

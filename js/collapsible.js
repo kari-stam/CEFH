@@ -26,7 +26,7 @@ for (i = 0; i < drop.length; i++) {
             content.style.maxHeight = null;
         } 
         else {
-            content.style.maxHeight = 250*cont.length + 'px';
+            content.style.maxHeight = 250*drop.length + 'px';
         }
     });
   }
