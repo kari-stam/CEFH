@@ -6,7 +6,7 @@
     font-weight: 100;
     margin: 0;
 }
-
+  
 .subheader1 {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-weight:lighter;
@@ -139,7 +139,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 132px;
-
+        
     }
 
         .filterBox{
@@ -203,7 +203,7 @@
                     margin-left: 15px;
                     cursor: pointer;
                 }
-
+                
                     /*pseudo*/
                     .year:hover{
                         color: #4f4f4f;
@@ -246,8 +246,15 @@
                     color: #68c394;
                 }
 
-                .active{
-                    color: #68c394;
+                .dropdown:after{
+                    content: "\002B";
+                    margin-right: 15px;
+                    align-self: center;
+
+                }
+
+                .active:after{
+                    content: "\2212";
                 }
 
             /*nested*/
@@ -255,20 +262,21 @@
             .dropCont{
                 display: flex;
                 flex-direction: column;
-                max-height: 0;
+                max-height: 0px;
                 overflow: hidden;
-                transition: max-height 0.5s linear;
+                transition: max-height 0.2s linear;
             }
 
             .monthName{
                 margin-left: 20px;
+                margin-right: auto;
             }
 
             .dropSymbol{
                 margin-right: 15px;
                 margin-left: auto;
             }
-
+        
         /*articles*/
         .newsArticle{
             margin-right: 5%;
@@ -325,3 +333,6 @@
                         margin-bottom: 20px;
                         /*overflow: hidden;*/
                     }
+
+
+    
