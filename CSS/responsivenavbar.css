@@ -1,0 +1,116 @@
+/*#navbar*/.topnav {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav a {
+  color: #4f4f4f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+#navwrap{
+  position: relative;
+  width:100%;
+  display: block;
+  height:80px;
+  background:#f5f5f5;
+  box-shadow: 0 0 10px 0 LightGray;
+  position:fixed;
+  top: 0;
+  z-index:100;
+}
+
+
+#homeButton{
+  position: relative;
+  display: block;
+  background: url("../img/Logo.png") no-repeat center;
+  width: 50px;
+  border: none;
+  margin: 0;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+#searchBox{
+    position: relative;
+    background-color: #f5f5f5;
+    display: block;
+    width: 220px;
+    margin: 18px;
+    height: 40px;
+    margin-right:0;
+
+}
+
+#searchButton{
+  position: absolute;
+  display: block;
+  background: url("../img/søk.png") no-repeat center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  padding: 0;
+  padding-right: 10px;
+
+}
+
+#searchText{
+  position: absolute;
+  background-color: #f5f5f5;
+  float:right;
+  width: 100px;
+  border: none;
+  padding: 0;
+  padding-left: 30px;
+  height: 40px;
+  left: 0;
+
+}
+
+
+/*CSS UNDER TAKEN FROM W3SCHOOLS TO STYLE THE DROPDOWN*/
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+}
+
+/* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .topnav> a{
+    display: none;}
+
+  a > .icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnavresponsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
