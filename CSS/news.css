@@ -28,7 +28,7 @@
     font-weight: lighter;
     font-size: 12px;
     margin: 0;
-}
+} /*det er denne endringen som gjør at menu-baren blir så rar*/
 
 .bodytext2 {
     font-family: futura, "Trebuchet MS", Arial, sans-serif;
@@ -262,7 +262,7 @@
             .dropCont{
                 display: flex;
                 flex-direction: column;
-                max-height: 0px;
+                max-height: 750px;
                 overflow: hidden;
                 transition: max-height 0.2s linear;
             }

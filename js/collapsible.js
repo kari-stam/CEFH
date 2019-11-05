@@ -22,11 +22,18 @@ for (i = 0; i < drop.length; i++) {
     drop[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.maxHeight){
+        x=0;
+        if (x==0){
             content.style.maxHeight = null;
-        } 
-        else {
-            content.style.maxHeight = 250*drop.length + 'px';
         }
+        else{ 
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } 
+            else {
+                content.style.maxHeight = 250*drop.length + 'px';
+            }
+        }
+        x+=1;
     });
   }
