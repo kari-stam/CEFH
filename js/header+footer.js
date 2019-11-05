@@ -1,3 +1,5 @@
+// header and footer inspired from: https://github.com/aslakhol/saftogsuse/blob/master/scripts/add_header_footer.js
+
 document.addEventListener("DOMContentLoaded", function(e){
   const menu=document.getElementById("menu");
         menu.innerHTML='<div id="navwrap">'
@@ -12,11 +14,23 @@ document.addEventListener("DOMContentLoaded", function(e){
                 +'<input type="text" placeholder="Search.." id="searchText">'
                 +'<input type="submit" value="" id="searchButton">'
               +"</div>"
+              + '<button class="navbar-toggle" onclick="dropdown()">'
+              +'</button>'
+              +'<div class="dropdownmenu">'
+                +'<ul>'
+                  +'<li><a href="about.html">About</a></li>'
+                  +'<li><a href="people.html">People</a></li>'
+                  +'<li><a href="publications.html">Publications</a></li>'
+                  +'<li><a href="events.html">Events</a></li>'
+                  +'<li><a href="news.html">News</a></li>'
+                +'</ul>'
+                +'</div>'
             +"</div>"
         +"</div>"
   const footer=document.getElementById("footer");
         footer.innerHTML='<div id="footwrap">'
-        +'<img id="footerImg" src="./img/Logo_text.png"></img>'
+        +'<img id="footerImgText" src="./img/logo_text.png"></img>'
+        +'<img id="footerImg" src="./img/logo_CeFH.png"></img>'
         +'<div id="contactText">'
           +'<h3 class="footerH">Postal adress</h3>'
           +'<p class="footerP">Norwegian Institute of Public Health</p>'

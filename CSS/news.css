@@ -6,7 +6,7 @@
     font-weight: 100;
     margin: 0;
 }
-  
+
 .subheader1 {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-weight:lighter;
@@ -28,7 +28,7 @@
     font-weight: lighter;
     font-size: 12px;
     margin: 0;
-}
+} /*det er denne endringen som gjør at menu-baren blir så rar*/
 
 .bodytext2 {
     font-family: futura, "Trebuchet MS", Arial, sans-serif;
@@ -139,7 +139,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 132px;
-        
+
     }
 
         .filterBox{
@@ -203,7 +203,7 @@
                     margin-left: 15px;
                     cursor: pointer;
                 }
-                
+
                     /*pseudo*/
                     .year:hover{
                         color: #4f4f4f;
@@ -246,16 +246,37 @@
                     color: #68c394;
                 }
 
+                .dropdown:after{
+                    content: "\002B";
+                    margin-right: 15px;
+                    align-self: center;
+
+                }
+
+                .active:after{
+                    content: "\2212";
+                }
+
             /*nested*/
+
+            .dropCont{
+                display: flex;
+                flex-direction: column;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s linear;
+            }
+
             .monthName{
                 margin-left: 20px;
+                margin-right: auto;
             }
 
             .dropSymbol{
                 margin-right: 15px;
                 margin-left: auto;
             }
-        
+
         /*articles*/
         .newsArticle{
             margin-right: 5%;
@@ -265,6 +286,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            overflow: hidden;
         }
 
             /*content*/
@@ -309,8 +331,5 @@
                         margin-left: 10%;
                         margin-right: 10%;
                         margin-bottom: 20px;
-                        overflow: hidden;
+                        /*overflow: hidden;*/
                     }
-
-
-    

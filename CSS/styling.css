@@ -1,11 +1,9 @@
+/*GENERAL STYLESHEET FOR ALL PAGES OF THE WEBPAGE*/
+
+/*importing the css for the header and footer*/
 @import url("header+footer.css");
 
-@media (max-width: 940px) {
-}
-
-@media (min-width: 940px) {
-}
-
+/*adding the white box around each header*/
 #headerbox{
   padding-top: 40px;
   padding-bottom: 20px;
@@ -37,6 +35,8 @@ a:active{
     text-decoration: underline;
     color:#68c394;
   }
+
+/*setting standard fonts for all pages*/
 
 #header {
   margin-top: 100px;
@@ -80,4 +80,34 @@ a:active{
   font-size: 14pt;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+/*when the screen is under 865px*/
+@media screen and (max-width: 865px) {
+  #header{
+    font-size: 36pt;
+  }
+
+  .subheader1 {
+    font-size: 22pt;
+  }
+
+  .subheader2 {
+    font-size: 14pt;
+  }
+}
+
+/*when the screen is under 695px*/
+@media screen and (max-width: 695px) {
+  #header{
+    font-size: 30pt;
+  }
+
+  .subheader1 {
+    font-size: 18pt;
+  }
+
+  .subheader2 {
+    font-size: 12pt;
+  }
 }
