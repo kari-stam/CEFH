@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function(e){
                 +'<input type="submit" value="" id="searchButton">'
               +"</div>"
               + '<button class="navbar-toggle" onclick="dropdown()">'
-                  +'<img src="img/hamburger.svg" alt="hamburger menu">'
               +'</button>'
               +'<div class="dropdownmenu">'
                 +'<ul>'
