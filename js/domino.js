@@ -14,6 +14,7 @@ domino();*/
 let img=document.getElementById("onOneRow_rec").querySelectorAll(".pubBox");
 
 function domino(){
+    img.style.display="none";
     for (i=0; i<img.length; i++){
       delay=i * 0.2;
       img[i].style.animation="domino 0.8s " + delay + "s ease-in";
@@ -26,14 +27,13 @@ function scrollposition(){
 }
 
 
-document.addEventListener("DOMContentLoaded", function(e) {
+document.addEventListener("scroll", function(e) {
     let y= window.scrollY;
     let x= 917; //position of pubBox
-    setInterval(scrollposition,100);
     console.log(y);
     if (y>=x) {
       domino();
-      y=0;
       console.log(y);
+      console.log("hei");
     }
 });
