@@ -7,51 +7,6 @@
   margin-bottom: 2%;
 }
 
-.standardpic {
-  position: absolute;
-  margin-left: 0;
-  height:100%;
-  width: 25%;
-
-}
-
-.allicons {
-  margin-left: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
-
-.practicaltext {
-    margin-left: 32%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.icon {
-  height: 20px;
-  width: 20px;
-
-}
-
-/*.practicalinfo {
-  margin-left: 30%;
-  position: relative;*/
-
-}
-
-.allicons {
-  margin-left: 1%;
-  position: absolute;
-}
-
-.practicaltext {
-  margin-left: 3%;
-  position: absolute;
-}
-
 .eventstitle {
   margin-left: 30%;
   font-weight:bolder;
@@ -60,17 +15,93 @@
 }
 
 .eventcontent {
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   margin-left: 30%;
   margin-right: 2%;
 }
+
+.standardpic {
+  position: absolute;
+  margin-left: 0;
+  height:100%;
+  width: 25%;
+  object-fit: cover;
+
+}
+
+.allicons {
+  margin-left: 30%;
+  display: flex;
+
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+
+}
+
+/*.allicons {
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}*/
+
+.dropdown{
+    margin-bottom: 25px;
+    margin-top: 2%;
+
+    align-content: center;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    background-color: #f5f5f5;
+    color: #4f4f4f;
+    height: 35px;
+
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%
+
+}
+
+.dropdown:hoover{
+  color: #68c394;
+}
+
+/*.practicaltext {
+    margin-left: 32%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;*/
+}
+
+
+/*.practicalinfo {
+  margin-left: 30%;
+  position: relative;*/
+
+}
+
+
+.practicaltext {
+  margin-left: 3%;
+  position: absolute;
+}
+
+
 
 #wrapper {
   display: flex;
   /*position: relative;*/
   margin-left: 15%;
   margin-right: 15%;
-  flex-direction: row-reverse;
+  flex-direction: row;
   height: 100%;
 
 
@@ -80,33 +111,27 @@
 #allEvents{
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
   width: 100%;
 }
 
-#filterbox {
-  position: sticky;
+#previousevents {
   overflow: hidden;
-  width: 30%;
-  top:100px;
+  width: 35%;
   margin-right: 10px;
+  margin-top: 8%;
 }
 
-.month {
+#prevevents:hoover {
+  color: #68c394;
+}
+
+/*.month {
   background-color: #F5F5F5;
   border: none;
-  padding-top: 0.002%;
-  padding-bottom: 0.002%;
   margin-top: 2%;
   display: flex;
   flex-direction: row;
   align-content: center;
   margin-bottom: 2%;
 
-
-}
-
-.monthheader {
-  margin-left: 5%;
-  background-color: #F5F5F5;
-}
+}*/

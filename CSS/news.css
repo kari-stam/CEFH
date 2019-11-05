@@ -28,7 +28,7 @@
     font-weight: lighter;
     font-size: 12px;
     margin: 0;
-}
+} /*det er denne endringen som gjør at menu-baren blir så rar*/
 
 .bodytext2 {
     font-family: futura, "Trebuchet MS", Arial, sans-serif;
@@ -246,8 +246,15 @@
                     color: #68c394;
                 }
 
-                .active{
-                    color: #68c394;
+                .dropdown:after{
+                    content: "\002B";
+                    margin-right: 15px;
+                    align-self: center;
+
+                }
+
+                .active:after{
+                    content: "\2212";
                 }
 
             /*nested*/
@@ -257,11 +264,12 @@
                 flex-direction: column;
                 max-height: 0;
                 overflow: hidden;
-                transition: max-height 0.5s linear;
+                transition: max-height 0.2s linear;
             }
 
             .monthName{
                 margin-left: 20px;
+                margin-right: auto;
             }
 
             .dropSymbol{
