@@ -48,25 +48,17 @@ placeholder{
 }
 .articleTitle{
   margin-left: 5%;
+  margin-right: 5%;
   padding-top: 5%;
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:bolder;
-  font-size: 12pt;
 }
 
 .articleData {
   margin-left: 5%;
   margin-right: 5%;
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 12pt;
   padding-bottom: 5%
 }
 .yearHeader{
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 26pt;
-  letter-spacing: 1px;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;

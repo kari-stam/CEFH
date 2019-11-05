@@ -81,3 +81,33 @@ a:active{
   margin-left: 15%;
   margin-right: 15%;
 }
+
+/*when the screen is under 865px*/
+@media screen and (max-width: 865px) {
+  #header{
+    font-size: 36pt;
+  }
+
+  .subheader1 {
+    font-size: 22pt;
+  }
+
+  .subheader2 {
+    font-size: 14pt;
+  }
+}
+
+/*when the screen is under 695px*/
+@media screen and (max-width: 695px) {
+  #header{
+    font-size: 30pt;
+  }
+
+  .subheader1 {
+    font-size: 18pt;
+  }
+
+  .subheader2 {
+    font-size: 12pt;
+  }
+}
