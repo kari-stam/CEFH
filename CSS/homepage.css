@@ -184,3 +184,19 @@ body {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+/*animation to make each personbox fade in after the other*/
+@keyframes domino{
+    0%{
+        opacity: 0;
+        }
+    56%{
+        }
+    100%{
+        opacity: 1;
+        }
+}
+
+.pubBox {
+    animation: domino 0.8s 1 0s ease-in;
+}
