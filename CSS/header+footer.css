@@ -80,14 +80,6 @@
   bottom: 0;
 }
 
-#footerImg{
-  width: 60%;
-  height: auto;
-  display: block;
-  margin: auto;
-  margin-right: 5%;
-}
-
 .footerH{
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
@@ -190,6 +182,19 @@
     width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
+
+  /*The Logo without text is shown in the footer*/
+  #footerImg{
+    width: 18%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-right: 5%;
+  }
+  /*The Logo with text is hidden in the footer*/
+  #footerImgText{
+    display: none;
+  }
 }
 
 /*when the page is over 965px the navbar is shown*/
@@ -209,5 +214,18 @@
   /*hamburgerbutton is not displayed*/
   .navbar-toggle{
     display:none;
+  }
+
+  /*The Logo with text is shown in the footer*/
+  #footerImgText{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-right: 5%;
+  }
+  /*The Logo without text is hidden in the footer*/
+  #footerImg{
+    display: none;
   }
 }
