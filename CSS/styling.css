@@ -1,11 +1,9 @@
+/*GENERAL STYLESHEET FOR ALL PAGES OF THE WEBPAGE*/
+
+/*importing the css for the header and footer*/
 @import url("header+footer.css");
 
-@media (max-width: 940px) {
-}
-
-@media (min-width: 940px) {
-}
-
+/*adding the white box around each header*/
 #headerbox{
   padding-top: 40px;
   padding-bottom: 20px;
@@ -37,6 +35,8 @@ a:active{
     text-decoration: underline;
     color:#68c394;
   }
+
+/*setting standard fonts for all pages*/
 
 #header {
   margin-top: 100px;

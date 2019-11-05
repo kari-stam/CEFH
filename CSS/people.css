@@ -1,34 +1,7 @@
-
-@media screen and (max-width: 1422px) {
-    .personbox, .third_in_row{
-      display: inline-block;
-      margin-right:9%;
-      padding: 5px;
-    }
-
-}
-
-
-@media screen and (min-width: 1423px) {
-  .personbox{
-    display: inline-block;
-    margin-right:9%;
-    padding: 5px;
-  }
-
-  .third_in_row{
-    margin-right:0px;
-    display: inline-block;
-    padding: 5px;
-  }
-
-}
-
-
 #firsttext{
   margin-top:30px;
 }
-
+/*box that contains the content menu*/
 #contentbox{
   margin-left:15%;
   display: block;
@@ -44,26 +17,6 @@
   margin-top:21px;
 
 }
-#whitebox{
-  display:flex;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom:30px;
-  background-color:#f5f5f5;
-  top: 0px;
-  width:100%;
-  height: 80%;
-}
-
-h2::before
-{
-  content:"";
-  height:100px;
-  margin-top:-100px;
-  visibility: hidden;
-  pointer-events:none;
-  display: block;
-}
 
 #contentlist{
   padding-left:0;
@@ -75,12 +28,47 @@ h2::before
   margin-bottom: 10px;
 }
 
+#contentlist a {
+  color:#8d8d8d;
+  font-family: futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight:lighter;
+  text-decoration: none;
+}
+
+#contentlist a:hover {
+  color:#4F4F4F;
+  text-decoration: none;
+}
+
+
+/*div that contains all content of the page except header and firsttext*/
+#whitebox{
+  display:flex;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom:30px;
+  background-color:#f5f5f5;
+  top: 0px;
+  width:100%;
+  height: 80%;
+}
+
+/*an element added to make the content menu link correctly, so that the name of each group is visible*/
+h2::before
+{
+  content:"";
+  height:100px;
+  margin-top:-100px;
+  visibility: hidden;
+  pointer-events:none;
+  display: block;
+}
+
 #teamgroups{
   margin-left:7%;
   margin-right: 15%;
   width: 60%;
 }
-
 
 p{
   color:#4F4F4F;
@@ -101,23 +89,12 @@ p{
   letter-spacing: 1px;
 }
 
-#contentlist a {
-  color:#8d8d8d;
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  text-decoration: none;
-}
-
-#contentlist a:hover {
-  color:#4F4F4F;
-  text-decoration: none;
-}
-
+/* a div around each group of members*/
 .grouping{
   margin-bottom:10%;
 }
 
-
+/*when hovering each link it scales up with 10%*/
 .personbox:hover {
   transform: scale(1.1);
 }
@@ -135,7 +112,7 @@ img {
   height:218px;
 }
 
-
+/*making the bullets of the list bigger and green*/
 .list li::before {
   content: "\2022";  /* \2022 is the CSS Code/unicode for a bullet */
   color: #68c394;
@@ -159,10 +136,14 @@ img {
   list-style-type:none;
   margin-bottom: 100px;
   padding-left: 20px;
-  z-index:1;
+  z-index:1; /*to make sure the list rolls under the navbar on scroll*/
 }
 
+#top_management_group{
+  text-decoration: underline;
+}
 
+/*animation to make each personbox fade in after the other*/
 @keyframes domino{
     0%{
         opacity: 0;
@@ -178,6 +159,29 @@ img {
     animation: domino 0.8s 1 0s ease-in;
 }
 
-#top_management_group{
-  text-decoration: underline;
+
+/*if the screen is under 1422 all pictures will have a margin-right of 9%*/
+@media screen and (max-width: 1422px) {
+    .personbox, .third_in_row{
+      display: inline-block;
+      margin-right:9%;
+      padding: 5px;
+    }
+
+}
+
+/*if the screen is over 1423 the pictures are three in a row (the margin of the right is 0)*/
+@media screen and (min-width: 1423px) {
+  .personbox{
+    display: inline-block;
+    margin-right:9%;
+    padding: 5px;
+  }
+
+  .third_in_row{
+    margin-right:0px;
+    display: inline-block;
+    padding: 5px;
+  }
+
 }
