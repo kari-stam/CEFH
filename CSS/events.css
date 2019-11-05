@@ -25,12 +25,14 @@
   margin-left: 0;
   height:100%;
   width: 25%;
+  object-fit: cover;
 
 }
 
 .allicons {
-  margin-left: 1%;
-  position: absolute;
+  margin-left: 30%;
+  display: flex;
+
 }
 
 .icon {
@@ -49,9 +51,8 @@
 
 .dropdown{
     margin-bottom: 25px;
+    margin-top: 2%;
 
-    display: flex;
-    flex-direction: row;
     align-content: center;
 
     cursor: pointer;
@@ -64,7 +65,8 @@
 
     padding: 0;
     margin-right: 0;
-    margin-left: 5%;
+    margin-left: 0;
+    width: 100%
 
 }
 
@@ -109,23 +111,21 @@
 #allEvents{
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
   width: 100%;
 }
 
-#filterbox {
-  position: sticky;
+#previousevents {
   overflow: hidden;
-  width: 30%;
-  top:100px;
+  width: 35%;
   margin-right: 10px;
+  margin-top: 8%;
 }
 
 #prevevents:hoover {
   color: #68c394;
 }
 
-.month {
+/*.month {
   background-color: #F5F5F5;
   border: none;
   margin-top: 2%;
@@ -134,4 +134,4 @@
   align-content: center;
   margin-bottom: 2%;
 
-}
+}*/
