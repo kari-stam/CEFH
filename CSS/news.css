@@ -137,29 +137,27 @@
 
     /*Filter*/
     .filter{
-        width: 18%;
-        /*background-color: rgb(198, 238, 227);*/
+        width: 20%;
         /*flexing*/
         display: flex;
         flex-direction: column;
         margin-right: 0;
         align-self: flex-start;
-        position: -webkit-sticky;
         position: sticky;
         top: 132px;
-
+        color: #4f4f4f;
     }
-
-        .filterBox{
-
+        #filterHeader{
+            margin-bottom: 14px;
         }
 
-        .filterLink{
-        }
-
-        div.filter * {
+        .newsType{
             color: #8d8d8d;
             margin-bottom: 5px;
+        }
+
+        .newsType:checked{
+            color: red;
         }
 
     /*Two main parts of content*/
@@ -182,10 +180,6 @@
                 flex-direction: row;
                 margin-right:auto;
             }
-
-                #eventLink,#publicationLink{
-                    /*margin-right: 30px;*/
-                }
 
                 .newsLink{
                     color: #4f4f4f;
@@ -255,14 +249,14 @@
                 }
 
                 .dropdown:after{
-                    content: "\002B";
+                    content: "\2212";
                     margin-right: 15px;
                     align-self: center;
 
                 }
 
                 .active:after{
-                    content: "\2212";
+                    content: "\002B";
                 }
 
             /*nested*/
@@ -339,5 +333,5 @@
                         margin-left: 10%;
                         margin-right: 10%;
                         margin-bottom: 20px;
-                        /*overflow: hidden;*/
+                        overflow: hidden;
                     }
