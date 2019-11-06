@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(e){
               +'<a href="news.html">News</a>'
               +'<div id="searchBox">'
                 +'<input type="text" placeholder="Search.." id="searchText">'
-                +'<input type="submit" value="" id="searchButton">'
+                +'<input type="submit" value="" id="searchButton" onclick="checkSearch()">'
               +"</div>"
               + '<button class="navbar-toggle" onclick="dropdown()">'
               +'</button>'
@@ -44,3 +44,9 @@ document.addEventListener("DOMContentLoaded", function(e){
           +'<p class="footerP">Marcus Thranes gate 2, Oslo</p>'
         +'</div> '
 });
+
+function checkSearch(){
+  let search=document.getElementById("searchText").value;
+  console.log("Du søkte etter: "+search);
+  document.getElementById("searchText").value="";
+}
