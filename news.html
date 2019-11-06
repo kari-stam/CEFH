@@ -26,30 +26,30 @@
                 <p id='filterHeader' class='subheader1'>Filter</p>
                 <span class='newsType'>
                     <input type="checkbox" id="general" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label class="bodytext1 typeLink">General</label>
+                    <label for='general' class="bodytext1 typeLink">General</label>
                 </span>
                 <span class='newsType'>
                     <input type="checkbox" id="publications" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label class="bodytext1 typeLink">Publications</label>
+                    <label for='publications' class="bodytext1 typeLink">Publications</label>
                 </span>
                 <span class='newsType'>
                     <input type="checkbox" id="researchFindings" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label class="bodytext1 typeLink">Research findings</label>
+                    <label for='researchFindings' class="bodytext1 typeLink">Research findings</label>
                 </span>
                 <span class='newsType'>
                     <input type="checkbox" id="events" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label class="bodytext1 typeLink">Events</label></span>
+                    <label for='events' class="bodytext1 typeLink">Events</label></span>
             </div>
             <div id='mainShit'>
                 <div id='links' class='bodytext2'>
                     <div id='sites'>
-                        <div class='newsLink' id='eventLink'>EVENTS</div>
-                        <div class='newsLink' id='publicationsLink'>PUBLICATIONS</div>
+                        <a class='newsLink' href='events.html'>EVENTS</a>
+                        <a class='newsLink' href='publications.html'>PUBLICATIONS</a>
                     </div>
                     <div id='yearsInner'>
-                        <div class='year' id='year1'> 2019 </div>
-                        <div class='year' id='year2'> 2018 </div>
-                        <div class='year' id='year3'> 2017 </div>
+                        <div class='yearLink' id='year1'> 2019 </div>
+                        <div class='yearLink' id='year2'> 2018 </div>
+                        <div class='yearLink' id='year3'> 2017 </div>
                     </div>
                 </div>
                 <div id='mainContent'>
@@ -179,11 +179,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
         <div id='footer'></div>
-        <script src='search.js'></script>
+        <script src='js/search.js'></script>
         <script src='js/responsivenavbar.js'></script>
         <script src='js/table.js'></script>
         <script src='js/collapsible.js'></script>
