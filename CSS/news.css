@@ -1,7 +1,7 @@
 /*fonts*/
 #header {
     font-family: "Crimson Text", serif;
-    font-size: 45px;
+    font-size: 45pt;
     font-variant: normal;
     font-weight: 100;
     margin: 0;
@@ -10,7 +10,7 @@
 .subheader1 {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-weight:lighter;
-    font-size: 24px;
+    font-size: 24pt;
     letter-spacing: 1px;
     margin: 0;
 }
@@ -18,7 +18,7 @@
 .subheader2 {
     font-family: futura, "Trebuchet MS", Arial, sans-serif;
     font-weight:lighter;
-    font-size: 18px;
+    font-size: 18pt;
     letter-spacing: 1px;
     margin: 0;
 }
@@ -26,14 +26,14 @@
 .bodytext1 {
     font-family: futura, "Trebuchet MS", Arial, sans-serif;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 12pt;
     margin: 0;
 } /*det er denne endringen som gjør at menu-baren blir så rar*/
 
 .bodytext2 {
     font-family: futura, "Trebuchet MS", Arial, sans-serif;
     font-weight:lighter;
-    font-size: 14px;
+    font-size: 14pt;
     margin: 0;
 }
 
@@ -50,7 +50,8 @@
 }
 
 #headText{
-    margin-left: 28.75%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .headerbox2{
@@ -268,6 +269,7 @@
             }
 
             .monthName{
+                margin: auto;
                 margin-left: 20px;
                 margin-right: auto;
             }
