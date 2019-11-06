@@ -5,6 +5,7 @@
     font-variant: normal;
     font-weight: 100;
     margin: 0;
+    margin-top: 100px;
 }
 
 .subheader1 {
@@ -54,18 +55,18 @@
     margin-top: 80px;
 }
 
+#headerbox{
+    background-color:#f5f5f5;
+    display: flex;
+    margin-bottom: 55px;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
 #headText{
     margin-left: 15%;
     margin-right: 15%;
-}
-
-.headerbox2{
-    position: relative;
-    width: 100%;
-    height: 215px;
-    left: 0px;
-    top: 100px;
-    background-color: #f5f5f5;
 }
 
 /*Search*/
@@ -91,7 +92,7 @@
     position: absolute;
     background-color: #f5f5f5;
     border: none;
-    margin-left: 2%; /*Hvordan få til dette uten at select-omrisset også starter etter 2%?*/
+    margin-left: 2%; 
     width: 98%;
     height: 50px;
     /*display: block;*/
@@ -114,19 +115,11 @@
     cursor: pointer;
 }
 
-#searchButtonNews img{ /*her må det også gjøres noe så img. havner midt i søkefeltet*/
-    position: relative;
-    width: 20px;
-    height: 20px;
-}
-
 /*Main content*/
-
 
 #newsContent{
     /*flex*/
     display: flex;
-    /*flex-wrap: wrap-reverse;*/
     flex-direction: row;
     /*Other shit*/
     margin-left: 15%;
@@ -149,7 +142,7 @@
         color: #4f4f4f;
     }
         #filterHeader{
-            margin-bottom: 14px;
+            margin-bottom: 15px;
         }
 
         .newsType{
@@ -193,10 +186,20 @@
                 }
 
             /*Years*/
+            #filterYearHeader{
+                margin-bottom: 15px;
+            }
+
             #yearsInner{
                 display: flex;
-                flex-direction: row;
-                margin-right: 20px;
+                flex-direction: column;
+                align-content: flex-start;
+                margin-bottom: 15px;
+                margin-right: auto;
+            }
+
+            div#yearsInner * {
+                margin-bottom: 5px;
             }
 
                 .year{
@@ -279,11 +282,6 @@
             .monthName{
                 margin-left: 20px;
                 margin-right: auto;
-            }
-
-            .dropSymbol{
-                margin-right: 15px;
-                margin-left: auto;
             }
 
         /*articles*/
