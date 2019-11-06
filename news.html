@@ -16,7 +16,7 @@
         </div>
         <div class='searchField'>
             <div id='searchBoxNews'>
-                <input type='text' placeholder='Search news...' class='bodytext3' id='searchNews'>
+                <input type='text' placeholder='Search news...' class='bodytext3' id='srcText'>
                 <button type='submit' id='searchButtonNews'>
                     <!--<img src='img/søk.png'>-->
                 </button>
@@ -56,7 +56,7 @@
                 <div id='mainContent'>
                     <!-- 1st month -->
                     <button type='button' class='dropdown bodytext1' id='month1'>
-                        <p class='monthName'>November 2019</p>
+                        <span class='monthName'>November 2019</span>
                     </button>
                     <div class='dropCont' style="max-height:750px;" id=month6>
                         <!-- Article 1.1 -->
@@ -65,7 +65,7 @@
                             <div class='aTextBox'>
                                 <div class='newsLabels bodytext1'>
                                     <span class='kind'>General</span>
-                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                    <span class='publishDate'>dd.mm.yy</span>
                                 </div>
                                 <div class='articleTitle subheader1'>
                                     <span class='articleTitleText'>Article 1</span>
@@ -83,7 +83,7 @@
                             <div class='aTextBox'>
                                 <div class='newsLabels bodytext1'>
                                     <span class='kind'>Publication</span>
-                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                    <span class='publishDate'>dd.mm.yy</span>
                                 </div>
                                 <div class='articleTitle subheader1'>
                                     <span class='articleTitleText'>Article 2</span>
@@ -101,7 +101,7 @@
                             <div class='aTextBox'>
                                 <div class='newsLabels bodytext1'>
                                     <span class='kind'>Event</span>
-                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                    <span class='publishDate'>dd.mm.yy</span>
                                 </div>
                                 <div class='articleTitle subheader1'>
                                     <span class='articleTitleText'>Article 3</span>
@@ -116,7 +116,7 @@
                     </div>
                     <!-- 2nd month -->
                     <button type='button' class='dropdown bodytext1' id='month2'>
-                        <p class='monthName'>October 2019</p>
+                        <span class='monthName'>October 2019</span>
                     </button>
                     <div class='dropCont' style="max-height:750px;">
                         <!-- Article 2.1 -->
@@ -125,7 +125,7 @@
                             <div class='aTextBox'>
                                 <div class='newsLabels bodytext1'>
                                     <span class='kind'>Event</span>
-                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                    <span class='publishDate'>dd.mm.yy</span>
                                 </div>
                                 <div class='articleTitle subheader1'>
                                     <span class='articleTitleText'>Article 1</span>
@@ -143,7 +143,7 @@
                             <div class='aTextBox'>
                                 <div class='newsLabels bodytext1'>
                                     <span class='kind'>General</span>
-                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                    <span class='publishDate'>dd.mm.yy</span>
                                 </div>
                                 <div class='articleTitle subheader1'>
                                     <span class='articleTitleText'>Article 2</span>
@@ -158,7 +158,7 @@
                     </div>
                     <!-- 3nrd month -->
                     <button type='button' class='dropdown bodytext1' id='month3'>
-                        <p class='monthName'>September 2019</p>
+                        <span class='monthName'>September 2019</span>
                     </button>
                     <div class='dropCont' style="max-height:750px;">
                         <!-- Article 2.1 -->
@@ -167,7 +167,7 @@
                             <div class='aTextBox'>
                                 <div class='newsLabels bodytext1'>
                                     <span class='kind'>Publication</span>
-                                    <span class='publishDate' id='article1'>dd.mm.yy</span>
+                                    <span class='publishDate'>dd.mm.yy</span>
                                 </div>
                                 <div class='articleTitle subheader1'>
                                     <span class='articleTitleText'>Article 1</span>
@@ -184,7 +184,8 @@
             </div>
         </div>
         <div id='footer'></div>
-        <script src='responsivenavbar.js'></script>
+        <script src='js/search.js'></script>
+        <script src='js/responsivenavbar.js'></script>
         <script src='js/table.js'></script>
         <script src='js/collapsible.js'></script>
         <script src="js/header+footer.js"></script>
