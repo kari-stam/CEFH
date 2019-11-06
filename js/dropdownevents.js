@@ -27,3 +27,6 @@ for (i=0; i < drop.length; i++){
     }
   });
 }
+
+var clientHeight = document.getElementById("monthEvents").clientHeight;
+console.log(clientHeight);
