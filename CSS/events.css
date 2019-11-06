@@ -4,6 +4,7 @@
   display: flex;
   overflow: hidden;
   flex-direction: column;
+  transition: max-height 0.2s linear;
 }
 
 
@@ -87,19 +88,34 @@
 
     margin-right: 0;
     margin-left: 0;
-    width: 100%
+    width: 100%;
+    display: flex;
+}
 
+.monthtype {
+  margin-left: 2%;
+  margin-right: auto;
+}
+
+.dropdown:hover{
+    color: #68c394;
+}
+
+.dropdown:after{
+    content: "\002B";
+    margin-right: 15px;
+    align-self: center;
 
 }
 
-.dropdown:hoover{
-  color: #68c394;
+.active:after{
+    content: "\2212";
 }
+
 
 
 #wrapper {
   display: flex;
-  /*position: relative;*/
   margin-left: 15%;
   margin-right: 15%;
   flex-direction: row;
