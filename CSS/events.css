@@ -7,6 +7,8 @@
   transition: max-height 0.2s linear;
 }
 
+/*max-height set to 0 so that the buttons will hide all the events when clicked on.*/
+
 
 .event {
   background-color: #F5F5F5;
@@ -16,6 +18,8 @@
   margin-bottom: 2%;
 }
 
+/*one spesific event*/
+
 .eventstitle {
   margin-left: 30%;
   font-weight:bolder;
@@ -24,12 +28,16 @@
   margin-bottom: 0;
 }
 
+/*title of event*/
+
 .eventcontent {
   padding-bottom: 2%;
   margin-left: 30%;
   margin-right: 2%;
   margin-top: 0;
 }
+
+/*the text describing the event, f.ex. "presentation by..."*/
 
 .standardpic {
   position: absolute;
@@ -40,9 +48,13 @@
 
 }
 
+/*standard images*/
+
 .practicalinfo {
   display: flex;
 }
+
+/*All the practical information, including icons: place, time, type of event*/
 
 .allicons {
   margin-left: 30%;
@@ -51,6 +63,8 @@
   justify-content: space-evenly;
 
 }
+
+/*the icons*/
 
 .icon {
   height: 20px;
@@ -63,12 +77,16 @@
   margin-left: 2%;
 }
 
+/*Text for the practical info*/
+
 .contenttext {
   margin-left: 0;
   margin-right: 0;
   font-size: 10pt;
 
 }
+
+/*class that overrides bodytext1 from styling.css, because it has margins to 15% left and right, and font-size 12.*/
 
 .dropdown{
     margin-bottom: 25px;
@@ -92,26 +110,35 @@
     display: flex;
 }
 
+/*Button for month*/
+
 .monthtype {
   margin-left: 2%;
   margin-right: auto;
 }
 
+/*text inside button*/
+
 .dropdown:hover{
     color: #68c394;
 }
 
+/*green text when hoveing on button*/
+
 .dropdown:after{
-    content: "\002B";
+    content: "\2212";
     margin-right: 15px;
     align-self: center;
 
 }
 
+/*showing minus*/
+
 .active:after{
-    content: "\2212";
+    content: "\002B"
 }
 
+/*showing plus, if button pushed and no events shows*/
 
 
 #wrapper {
@@ -122,11 +149,15 @@
   height: 100%;
 }
 
+/*all events, buttons and link to previous events, with flex to arrange them*/
+
 #allEvents{
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
+/*all the events including buttons*/
 
 #previousevents {
   overflow: hidden;
@@ -135,17 +166,10 @@
   margin-top: 8%;
 }
 
-#prevevents:hoover {
+/*arrangement of link to prevous events*/
+
+#prevevents:hover {
   color: #68c394;
 }
 
-/*.month {
-  background-color: #F5F5F5;
-  border: none;
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  margin-bottom: 2%;
-
-}*/
+/*Link to previous events will hover in green */

@@ -11,20 +11,23 @@
 
 
   <body>
-
+    <!--Element for the top navbar-->
     <div id="menu"></div>
+
+    <!--Headerbox for white area-->
     <div id="headerbox">
     <h1 id="header"> Events at Center of fertility and health</h1> </div>
 
+    <!--content for link to previous events, buttons for months and events-->
     <div id="wrapper">
 
       <div id="previousevents">
-        <a href="https://www.fhi.no/en/more/research-centres/Centre-for-fertility-and-health/next-events/" class="bodytext1">View Previous Events</a>
+        <a href="https://www.fhi.no/en/more/research-centres/Centre-for-fertility-and-health/past-events/" class="bodytext1">View Previous Events</a>
       </div>
 
       <div id="allEvents">
           <button type='button' class='dropdown bodytext1'><span class='monthtype'>November</span></button>
-        <div class="monthEvents" style='max-height:750px;'>
+        <div class="monthEvents" style='max-height:1000px;'> <!--Max height set to 1000px so that it overrides max-height set to 0 in .monthEvents, so that the default setting shows all the events-->
           <div class="event">
             <img class="standardpic" src="img/spermwhale.jpg" alt="picture of genes">
             <p class="eventstitle bodytext1">CeFH Lunch Seminar:NMR Metabolomics in large-scale cohorts: Molecular insights and translational outlook</p>
@@ -108,11 +111,12 @@
 
     </div>
 
-
+    <!--footer-->
     <div id="footer"></div>
 
     <script src="js/header+footer.js"></script>
     <script src="js/dropdownevents.js"></script>
+    <script src='js/responsivenavbar.js'></script>
   </body>
 
 </html>

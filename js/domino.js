@@ -1,14 +1,4 @@
-//The first function was for the poeple page but it isnt in use"
-/*let img=document.getElementById("teamgroups").querySelectorAll(".personbox");
 
-function domino(){
-  for (i=0; i<img.length; i++){
-    delay=i * 0.1;
-    img[i].style.animation="domino 0.8s " + delay + "s ease-in";
-  }
-}
-
-domino();*/
 
 /*selects the elements that are going to be targeted*/
 let elm=document.getElementById("onOneRow_rec").querySelectorAll(".pubBox");
