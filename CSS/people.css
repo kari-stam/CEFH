@@ -143,22 +143,6 @@ img {
   text-decoration: underline;
 }
 
-/*animation to make each personbox fade in after the other*/
-@keyframes domino{
-    0%{
-        opacity: 0;
-        }
-    56%{
-        }
-    100%{
-        opacity: 1;
-        }
-}
-
-.personbox {
-    animation: domino 0.8s 1 0s ease-in;
-}
-
 
 /*if the screen is under 1422 all pictures will have a margin-right of 9%*/
 @media screen and (max-width: 1422px) {
