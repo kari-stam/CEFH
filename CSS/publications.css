@@ -1,11 +1,11 @@
-body{
-}
 
+/*line of text under search bar*/
 #peopleText{
   text-align: center;
   margin-top: 60px;
 }
 
+/*ldiv containing search inputs*/
 #srcBox{
   display: flex;
   margin-top: 80px;
@@ -14,27 +14,33 @@ body{
   width: 70%;
 }
 
+/*submit button for the text input field*/
 #srcButton{
   display: block;
   background: url("../img/søk.png") no-repeat center;
   background-color:#f5f5f5;
   border: none;
   outline: none;
+  cursor: pointer;
   width: 50px;
   height: 50px;
   right: 0;
   padding: 0;
   cursor: pointer;
 }
+
+/*submit button for the text input field*/
 #srcButton img{
   position: relative;
   width: 20px;
   height: 20px;
   margin: auto;
   border: none;
-  
+  outline: none;
+  cursor: pointer;
 }
 
+/*text input field*/
 #srcText{
   background-color: #f5f5f5;
   border: none;
@@ -47,11 +53,14 @@ body{
   padding: 0;
   padding-left: 20px;
 }
+
 placeholder{
   font-family: futura, "Trebuchet MS", Arial, sans-serif;
   font-weight:lighter;
   font-size: 12pt;
 }
+
+/*Titles of the articles*/
 .articleTitle{
   margin-left: 5%;
   margin-right: 5%;
@@ -59,11 +68,14 @@ placeholder{
   font-weight:bolder;
 }
 
+/*Body text of the articles*/
 .articleData {
   margin-left: 5%;
   margin-right: 5%;
   padding-bottom: 5%
 }
+
+/*Year of publication header*/
 .yearHeader{
   text-align: center;
   margin-left: 5%;
@@ -72,6 +84,7 @@ placeholder{
   margin-top: 0px;
 }
 
+/*All divs with publications from 2017-2019*/
 #contentBox{
   display: block;
   width: 70%;
@@ -79,6 +92,8 @@ placeholder{
   top: 80px;
   overflow: hidden;
 }
+
+/*Wrapping for placing vertical nav bar and content on the page*/
 #wrapper{
   margin-left: 15%;
   margin-right: 15%;
@@ -86,11 +101,13 @@ placeholder{
   margin-top: 30px;
 }
 
+/*Giving all publications a white box*/
 .article{
   background-color: #f5f5f5;
 
 }
 
+/*The vertical nav bar fot sorting the page*/
 #navbar{
   position: sticky;
   overflow: hidden;
@@ -102,37 +119,44 @@ placeholder{
   margin-right: 10px;
 }
 
+/*Links to the year of publication*/
 .yearLink{
   margin-left:0;
   text-decoration: none;
   color: #8d8d8d;
 }
 
+/*Links to the year of publication on hover*/
 .yearLink:hover{
   text-decoration: none;
   color: #4f4f4f;
 }
 
+/*headers for the different sorting categories*/
 .sortHeader{
   margin-top:30px;
   margin-left:0;
   margin-right:70px;
 }
 
+/*Sorting of different types of publications*/
 .typeLink{
   margin-left:10px;
   color: #8d8d8d;
 }
 
+/*Making labels of checked checkboxes darker*/
 #sortType input[type=checkbox]:checked+label{
     color: #4f4f4f;
 }
 
+/*Putting height over the year headers*/
 .scroll{
   display:block;
   height: 90px;
 }
 
+/*Header for year sorting*/
 #yearOfPub{
   margin-top: 90px;
 }
