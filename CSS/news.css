@@ -37,6 +37,11 @@
     margin: 0;
 }
 
+.navbar{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 /*Header*/
 
 .white{
@@ -103,8 +108,10 @@
     border: none;
     width: 40px;
     height: 40px;
-    margin: 7px; /*her må det fikses noe - img. er litt facka*/
+    margin: 7px;
     right: 0;
+    background: url("../img/søk.png") no-repeat center;
+    cursor: pointer;
 }
 
 #searchButtonNews img{ /*her må det også gjøres noe så img. havner midt i søkefeltet*/
