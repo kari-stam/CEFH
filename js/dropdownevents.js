@@ -1,6 +1,6 @@
 
 
-let drop = document.getElementsByClassName("dropdown");
+/*let drop = document.getElementsByClassName("dropdown");
 
 
 let i;
@@ -14,7 +14,7 @@ for (i=0; i < drop.length; i++){
     let pixels+=dropCont[j].scrollHeight;
   }*/
 
-  console.log(cont);
+  /*console.log(cont);
 
   drop[i].addEventListener("click,", function(){
     this.classList.toggle("active");
@@ -27,3 +27,27 @@ for (i=0; i < drop.length; i++){
     }
   });
 }
+
+/*emil prøver noe*/
+
+var drop = document.getElementsByClassName("dropdown");
+
+var i;
+
+
+
+for (i = 0; i < drop.length; i++) {
+    let dropCont=document.getElementsByClassName('monthEvents');
+    let cont = document.getElementsByClassName('monthEvents')[i].getElementsByClassName('event');
+    console.log(cont);
+    drop[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            }
+            else {
+                content.style.maxHeight = 250*dropCont.length + 'px';
+            }
+    });
+  }
