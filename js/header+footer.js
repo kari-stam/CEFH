@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function(e){
         +"</div>"
   const footer=document.getElementById("footer");
         footer.innerHTML='<div id="footwrap">'
-        +'<img id="footerImgText" src="./img/logo_text.png"></img>'
-        +'<img id="footerImg" src="./img/logo_CeFH.png"></img>'
+        +'<img id="footerImgText" src="../img/logo_text.png"></img>'
+        +'<img id="footerImg" src="../img/logo_CeFH.png"></img>'
         +'<div id="contactText">'
           +'<h3 class="footerH">Postal adress</h3>'
           +'<p class="footerP">Norwegian Institute of Public Health</p>'
