@@ -82,7 +82,7 @@
     width: 100%;
 }
 
-#searchNews{
+#srcText{
     position: absolute;
     background-color: #f5f5f5;
     border: none;
@@ -151,7 +151,7 @@
         }
 
         div.filter * {
-            color: bl#8d8d8d;
+            color: #8d8d8d;
             margin-bottom: 5px;
         }
 
@@ -269,7 +269,6 @@
             }
 
             .monthName{
-                margin: auto;
                 margin-left: 20px;
                 margin-right: auto;
             }
