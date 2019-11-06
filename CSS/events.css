@@ -32,6 +32,8 @@
 .allicons {
   margin-left: 30%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
 }
 
@@ -39,6 +41,11 @@
   height: 20px;
   width: 20px;
 
+}
+
+.practicalcontent {
+  display: flex;
+  margin-left: 35%;
 }
 
 /*.allicons {
@@ -53,7 +60,9 @@
     margin-bottom: 25px;
     margin-top: 2%;
 
-    align-content: center;
+    text-align: left;
+    margin-left: 2%;
+
 
     cursor: pointer;
     border: none;
@@ -68,30 +77,11 @@
     margin-left: 0;
     width: 100%
 
+
 }
 
 .dropdown:hoover{
   color: #68c394;
-}
-
-/*.practicaltext {
-    margin-left: 32%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;*/
-}
-
-
-/*.practicalinfo {
-  margin-left: 30%;
-  position: relative;*/
-
-}
-
-
-.practicaltext {
-  margin-left: 3%;
-  position: absolute;
 }
 
 
@@ -103,7 +93,6 @@
   margin-right: 15%;
   flex-direction: row;
   height: 100%;
-
 
 
 }
