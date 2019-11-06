@@ -144,6 +144,7 @@
         margin-right: 0;
         align-self: flex-start;
         position: sticky;
+        margin-top: 215px;
         top: 132px;
         color: #4f4f4f;
     }
@@ -198,7 +199,7 @@
                 margin-right: 20px;
             }
 
-                .yearLink{
+                .year{
                     color: #8d8d8d;
                     margin-left: 15px;
                     cursor: pointer;
@@ -206,9 +207,6 @@
 
                     /*pseudo*/
                     .year:hover{
-                        color: #4f4f4f;
-                    }
-                    .year:active{
                         color: #4f4f4f;
                     }
 
@@ -220,6 +218,17 @@
         align-content: space-between;
         margin-right: 55px;
     }
+
+    .yearHeader{
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .scroll{
+        display: block;
+        height: 90px;
+      }
 
         /*dropdowns*/
         .dropdown{
@@ -332,4 +341,5 @@
                         margin-right: 10%;
                         margin-bottom: 20px;
                         overflow: hidden;
+                        font-size: 8pt;
                     }
