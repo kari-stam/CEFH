@@ -2,11 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>CeFH</title>
     <link rel="stylesheet" href="CSS/homepage.css">
     <link rel="stylesheet" href="CSS/styling.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson%20Text" rel="stylesheet">
-    <link href="./img/logo_CeFH.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="CSS/scroll.css">
   </head>
 
   <body>
@@ -34,41 +33,47 @@
       <!--NEWS-->
       <div id="newsContainer">
         <div id="newsSlide">
-          <div class="newsBox">
-            <img alt="News photo 1" src="./img/gemma_sharp.jpeg"/>
-            <p class="newsFont3">NEWS Published 14.09.2019</p>
-            <p class=newsFont1>Reflections from Emma Sharp</p>
-            <p class="newsFont2">
-              Dr. Gemma Sharp spent 10 weeks visiting the Centre for Fertility and Health.
-            </p>
-          </div>
+          <button id="left">&#10094;</button>
+          <div id="slide-container">
+            <div class="divcontainer">
+              <div class="newsBox slider-image">
+                <img alt="News photo 1" src="./img/gemma_sharp.jpeg"/>
+                <p class="newsFont3">NEWS Published 14.09.2019</p>
+                <p class=newsFont1>Reflections from Emma Sharp</p>
+                <p class="newsFont2">
+                  Dr. Gemma Sharp spent 10 weeks visiting the Centre for Fertility and Health.
+                </p>
+              </div>
 
-          <div class="newsBox">
-            <img alt="News photo 2" src="./img/gro-brundtland-portrait.jpeg"/>
-            <p class="newsFont3">NEWS Published 12.09.2019</p>
-            <p class=newsFont1>The Gro Harlem Brundtland Visiting Scholarship</p>
-            <p class="newsFont2">
-              The Centre for Fertility and Health visiting scholar program hosts young researchers from Norway and abroad.
-            </p>
-          </div>
+              <div class="newsBox slider-image">
+                <img alt="News photo 2" src="./img/gro-brundtland-portrait.jpeg"/>
+                <p class="newsFont3">NEWS Published 12.09.2019</p>
+                <p class=newsFont1>The Gro Harlem Brundtland Visiting Scholarship</p>
+                <p class="newsFont2">
+                  The Centre for Fertility and Health visiting scholar program hosts young researchers from Norway and abroad.
+                </p>
+              </div>
 
-          <div class="newsBox">
-            <img alt="News photo 3" src="./img/liten-gutt-spiser.jpeg"/>
-            <p class="newsFont3">RESEARCH FINDINGS Published 13.07.2019</p>
-            <p class=newsFont1>Gene variant found that may explain toddler weight gain</p>
-            <p class="newsFont2">
-              Genes are involved in controlling weight gain early in life, according to a study based on data from the Norwegian Mother, Father and Child Cohort Study (MoBa).
-            </p>
-          </div>
+              <div class="newsBox slider-image">
+                <img alt="News photo 3" src="./img/liten-gutt-spiser.jpeg"/>
+                <p class="newsFont3">RESEARCH FINDINGS Published 13.07.2019</p>
+                <p class=newsFont1>Gene variant found that may explain toddler weight gain</p>
+                <p class="newsFont2">
+                  Genes are involved in controlling weight gain early in life, according to a study based on data from the Norwegian Mother, Father and Child Cohort Study (MoBa).
+                </p>
+              </div>
 
-          <div class="newsBox">
-            <img alt="News photo 4" src="./img/norbis.jpeg"/>
-            <p class="newsFont3">NEWS Published 31.07.2019</p>
-            <p class=newsFont1>NORBIS course: Modern methods for analyzing survival and time to event data (IMB9335)</p>
-            <p class="newsFont2">
-              The course is organized by NORBIS and is open to everyone, but PhD students will be prioritized.
-            </p>
+              <div class="newsBox slider-image">
+                <img alt="News photo 4" src="./img/norbis.jpeg"/>
+                <p class="newsFont3">NEWS Published 31.07.2019</p>
+                <p class=newsFont1>NORBIS course: Modern methods for analyzing survival and time to event data (IMB9335)</p>
+                <p class="newsFont2">
+                  The course is organized by NORBIS and is open to everyone, but PhD students will be prioritized.
+                </p>
+              </div>
+            </div>
           </div>
+          <button id="right">&#10095;</button>
         </div>
       </div>
 
@@ -96,7 +101,6 @@
             <p class="newsFont2">Borgan Ø. Gjessing et al.</p>
           </div>
         </div>
-        <p class="bodytext1 viewMore"><a class="viewMore" href="publications.html">VIEW MORE</a></p>
       </div>
 
       <!--UPCOMING EVENTS-->
@@ -107,37 +111,36 @@
         </div>
 
         <div id="onOneRow_upev">
-          <div class="upevBox">
+          <div id="upevBox">
             <p class="newsFont1">09.OKT</p>
             <p class="newsFont3">Oslo University Hospital</p>
             <p class="upevFont">CeFH biostatical seminar</p>
           </div>
 
-          <div class="upevBox">
+          <div id="upevBox">
             <p class="newsFont1">18.OKT</p>
             <p class="newsFont3">Oslo University Hospital</p>
             <p class="upevFont">CeFH lunch seminar</p>
           </div>
 
-          <div class="upevBox">
+          <div id="upevBox">
             <p class="newsFont1">25.OKT</p>
             <p class="newsFont3">Oslo University Hospital</p>
             <p class="upevFont">CeFH lunch seminar</p>
           </div>
 
-          <div class="upevBox">
+          <div id="upevBox">
             <p class="newsFont1">15.NOV</p>
             <p class="newsFont3">Oslo University Hospital</p>
             <p class="upevFont">CeFH lunch seminar</p>
           </div>
 
-          <div class="upevBox">
+          <div id="upevBox">
             <p class="newsFont1">10.JAN</p>
             <p class="newsFont3">Oslo University Hospital</p>
             <p class="upevFont">CeFH genetics friday</p>
           </div>
         </div>
-        <p class="bodytext1 viewMore"><a class="viewMore" href="events.html">VIEW MORE</a></p>
       </div>
     </div>
 
@@ -145,7 +148,7 @@
     <script src="js/header+footer.js"></script>
     <script src="js/domino.js"></script>
     <script src="js/responsivenavbar.js"></script>
-
+    <script src="js/newsscrolling.js"></script>
 
   </body>
 
