@@ -18,9 +18,7 @@
         <div class='searchField'>
             <div id='searchBoxNews'>
                 <input type='text' placeholder='Search news...' class='bodytext3' id='srcText'>
-                <button type='submit' id='searchButtonNews'>
-                    <!--<img src='img/søk.png'>-->
-                </button>
+                <input type='submit' value='' id='searchButtonNews' onclick='checkSrc()'>
             </div>
         </div>
         <div id='newsContent'>
@@ -28,19 +26,19 @@
                 <p id='filterHeader' class='subheader1'>Filter</p>
                 <span>
                     <input type="checkbox" id="general" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label for="scientific" class="bodytext1 typeLink">General</label>
+                    <label class="bodytext1 typeLink">General</label>
                 </span>
                 <span>
                     <input type="checkbox" id="publications" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label for="scientific" class="bodytext1 typeLink">Publications</label>
+                    <label class="bodytext1 typeLink">Publications</label>
                 </span>
                 <span>
                     <input type="checkbox" id="researchFindings" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label for="scientific" class="bodytext1 typeLink">Research findings</label>
+                    <label class="bodytext1 typeLink">Research findings</label>
                 </span>
                 <span>
                     <input type="checkbox" id="events" class="checkbox" onclick="sortBoxes(); sortPublications()">
-                    <label for="scientific" class="bodytext1 typeLink">Events</label></span>
+                    <label class="bodytext1 typeLink">Events</label></span>
             </div>
             <div id='mainShit'>
                 <div id='links' class='bodytext2'>
@@ -185,7 +183,7 @@
             </div>
         </div>
         <div id='footer'></div>
-        <script src='js/search.js'></script>
+        <script src='search.js'></script>
         <script src='js/responsivenavbar.js'></script>
         <script src='js/table.js'></script>
         <script src='js/collapsible.js'></script>
