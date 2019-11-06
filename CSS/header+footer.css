@@ -53,11 +53,13 @@
   display: block;
   background: url("../img/søk.png") no-repeat center;
   border: none;
+  outline: none;
   width: 40px;
   height: 40px;
   right: 0;
   padding: 0;
   padding-right: 10px;
+  cursor: pointer;
 
 }
 
@@ -66,7 +68,8 @@
   background-color: #f5f5f5;
   float:right;
   width: 100px;
-  border: 0;
+  border: none;
+  outline: none;
   padding: 0;
   padding-left: 30px;
   height: 40px;
