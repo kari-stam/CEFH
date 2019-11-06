@@ -156,9 +156,11 @@
             margin-bottom: 5px;
         }
 
-        .newsType:checked{
-            color: red;
+        input[type=checkbox]:checked+label{
+            color: #4f4f4f;
         }
+        
+        
 
     /*Two main parts of content*/
     #mainShit{
@@ -186,12 +188,8 @@
                     margin-bottom: -2px;
                     margin-right: 30px;
                     cursor: pointer;
+                    text-decoration: none;
                 }
-
-                    /*pseudo*/
-                    .newsLink:hover{
-                        border-bottom: 2px solid #68c394;
-                    }
 
             /*Years*/
             #yearsInner{
@@ -200,7 +198,7 @@
                 margin-right: 20px;
             }
 
-                .year{
+                .yearLink{
                     color: #8d8d8d;
                     margin-left: 15px;
                     cursor: pointer;

@@ -1,4 +1,4 @@
-/*js for dropwoen menus*/
+/*js for dropdownen menus*/
 var drop = document.getElementsByClassName("dropdown");
 
 var i;
