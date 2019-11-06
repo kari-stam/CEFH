@@ -20,3 +20,5 @@ for (i = 0; i < drop.length; i++) { /*goes through all month buttons*/
             }
     });
   }
+
+/*code from https://www.w3schools.com/howto/howto_js_collapsible.asp?fbclid=IwAR0PpRrk6AKFkLJitL2LQhvuPhzkZyBWvSHzg-6WB7PR6y6cnYTC0OKwIyM*/
