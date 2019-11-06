@@ -1,4 +1,14 @@
 
+.monthEvents {
+  max-height: 0;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+
+
+
 .event {
   background-color: #F5F5F5;
   border:none;
