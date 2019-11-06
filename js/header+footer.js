@@ -1,5 +1,6 @@
 // header and footer inspired from: https://github.com/aslakhol/saftogsuse/blob/master/scripts/add_header_footer.js
 
+/*Function for adding header and fotter to the page*/
 document.addEventListener("DOMContentLoaded", function(e){
   const menu=document.getElementById("menu");
         menu.innerHTML='<div id="navwrap">'
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                 +'</div>'
             +"</div>"
         +"</div>"
+
   const footer=document.getElementById("footer");
         footer.innerHTML='<div id="footwrap">'
         +'<img id="footerImgText" src="./img/Logo_text.png"></img>'
@@ -44,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function(e){
           +'<p class="footerP">Marcus Thranes gate 2, Oslo</p>'
         +'</div> '
 });
+
+/*Function for console logging search and reseting the search field in the menu*/
 
 function checkSearch(){
   let search=document.getElementById("searchText").value;
