@@ -1,22 +1,10 @@
 /*js for dropdownen menus*/
+
+/*Inspirert av: https://www.w3schools.com/howto/howto_js_collapsible.asp*/
+
 var drop = document.getElementsByClassName("dropdown");
 
 var i;
-
-/*for (i=0; i < drop.length; i++){
-    drop[i].addEventListener('click', function(){
-        this.classList.toggle('active');
-        var content = this.nextElementSibling;
-        if (content.style.display === 'none'){
-            content.style.display = 'flex';
-        }
-        else{
-            content.style.display = 'none';
-        }
-    });
-}*/
-
-
 
 for (i = 0; i < drop.length; i++) {
     let dropCont=document.getElementsByClassName('dropCont');
