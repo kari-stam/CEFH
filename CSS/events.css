@@ -174,3 +174,12 @@
 }
 
 /*Link to previous events will hover in green */
+
+
+/*if the screen is over 1937px the max width of the content is 1180px*/
+@media screen and (min-width: 1937px) {
+
+  #header, #wrapper{
+    max-width:1180px;
+  }
+}
