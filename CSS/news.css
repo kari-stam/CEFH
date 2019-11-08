@@ -191,7 +191,7 @@
         margin-left: 5%;
         width: 100%;
         max-width: 1060px;
-        margin: 0 auto;
+        /*margin: 0 auto; took this away to make responsive in wide 4k screens*/
     }
 
     /*main content*/
@@ -322,3 +322,12 @@
                         overflow: hidden;
                         font-size: 8pt;
                     }
+
+
+/*if the screen is over 1937px the max width of the content is 1180px*/
+@media screen and (min-width: 1937px) {
+
+  #header, .searchField, #newsContent{
+    max-width:1180px;
+  }
+}
