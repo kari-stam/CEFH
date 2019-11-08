@@ -12,10 +12,11 @@
 
 .event {
   background-color: #F5F5F5;
-  border:none;
-  align-self: center;
-  position: relative;
+  border: 0;
+  align-self: flex-start;
   margin-bottom: 2%;
+  position: relative;
+  width: 95%;
 }
 
 /*one spesific event*/
