@@ -159,3 +159,11 @@ placeholder{
 #yearOfPub{
   margin-top: 90px;
 }
+
+/*if the screen is over 1937px the max width of the content is 1180px*/
+@media screen and (min-width: 1937px) {
+
+  #header, #srcBox, #peopleText, #wrapper{
+    max-width:1180px;
+  }
+}
