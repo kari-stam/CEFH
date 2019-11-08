@@ -1,3 +1,4 @@
+
 #firsttext{
   margin-top:30px;
 }
@@ -170,7 +171,7 @@ img {
 
 }
 
-/*if the screen is over 1937px wide all pictures have same margin*/
+/*if the screen is over 1937px wide all pictures have same margin and the max width of the content is 1180px*/
 @media screen and (min-width: 1937px) {
   .personbox, .third_in_row{
     display: inline-block;
@@ -178,4 +179,7 @@ img {
     padding: 5px;
   }
 
+  #header, #contentbox, #teamgroups, #firsttext{
+    max-width:1180px;
+  }
 }
