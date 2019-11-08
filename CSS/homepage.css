@@ -86,15 +86,15 @@ body {
   background-color: #f5f5f5;
 }
 
-.newsBox:hover {
+.newsBox:hover, .pubBox:hover, .upevBox:hover{
   transform: scale(1.1);
 }
 
-.newsBox a{
+.newsBox a, .pubBox a, .upevBox a{
   text-decoration: none;
 }
 
-.newsBox a:hover{
+.newsBox a:hover, .pubBox a:hover, .upevBox a:hover{
   text-decoration:none;
   color:#4f4f4f;
 }
