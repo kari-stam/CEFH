@@ -16,7 +16,7 @@ for (i = 0; i < drop.length; i++) { /*goes through all month buttons*/
                 content.style.maxHeight = null; /*hides events inside month*/
             }
             else {
-                content.style.maxHeight = 1000 + 'px';  /*shows all events inside a month, inside a 1000px height*/
+                content.style.maxHeight = 1500 + 'px';  /*shows all events inside a month, inside a 1000px height*/
             }
     });
   }
