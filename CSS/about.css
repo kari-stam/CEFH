@@ -14,12 +14,23 @@
   height: 10%;
 }
 
+
 /*div containing data sources content*/
 #datasourcesbox {
   padding-top: 60px;
   padding-bottom:30px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
+.subheader1, .subheader2, .bodytext1, .bodytext2{
+  margin:0;
+}
+
+#researchcontent, #headertext, .navbar {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
 .bodytext1{
   margin-bottom: 25px;
@@ -66,4 +77,12 @@
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 15pt;
   margin-top:5%;
+}
+
+/*if the screen is over 1937px wide the max width of the content is 1180px*/
+@media screen and (min-width: 1937px) {
+
+  #header, #headertext, #researchcontent, #datasourcesbox, #firsttext{
+    max-width:1180px;
+  }
 }
