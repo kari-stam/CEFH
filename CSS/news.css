@@ -281,6 +281,10 @@
             }
 
                 .aImg{
+<<<<<<< Updated upstream
+=======
+                    object-fit: cover;
+>>>>>>> Stashed changes
                     width: 50%;
                     height: 100%;
                 }
