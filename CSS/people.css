@@ -144,7 +144,7 @@ img {
 }
 
 
-/*if the screen is under 1422 all pictures will have a margin-right of 9%*/
+/*if the screen is under 1422px wide (tablet size) all pictures will have a margin-right of 9%*/
 @media screen and (max-width: 1422px) {
     .personbox, .third_in_row{
       display: inline-block;
@@ -154,8 +154,8 @@ img {
 
 }
 
-/*if the screen is over 1423 the pictures are three in a row (the margin of the right is 0)*/
-@media screen and (min-width: 1423px) {
+/*if the screen is over 1423px wide and under 1936px wide the pictures are three in a row (the margin of the right is 0)*/
+@media screen and (min-width: 1423px) and (max-width:1936px) {
   .personbox{
     display: inline-block;
     margin-right:9%;
@@ -165,6 +165,16 @@ img {
   .third_in_row{
     margin-right:0px;
     display: inline-block;
+    padding: 5px;
+  }
+
+}
+
+/*if the screen is over 1937px wide all pictures have same margin*/
+@media screen and (min-width: 1937px) {
+  .personbox, .third_in_row{
+    display: inline-block;
+    margin-right:9%;
     padding: 5px;
   }
 
