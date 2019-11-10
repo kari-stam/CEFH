@@ -6,86 +6,82 @@ body {
 }
 
 
-/*FRONT*/
-#frontContainer {
-  order: 0;
-  flex-basis: auto;
-  margin: auto;
-  padding: 12% 15% 8% 15%;
-}
+  /*FRONT*/
+  #frontContainer {
+    order: 0;
+    flex-basis: auto;
+    margin: auto;
+    padding: 12% 15% 8% 15%;
+  }
 
-#onOneRow_front {
-  display: flex;
-}
+  #onOneRow_front {
+    display: flex;
+  }
 
-#onOneRow_front div {
-  order: 0;
-  width: 800px;
-}
+  #onOneRow_front div {
+    order: 0;
+    width: 800px;
+  }
 
-#onOneRow_front img {
-  order: 1;
-  flex-basis: 500px;
-  margin: auto;
-}
+        /*img*/
+        #onOneRow_front img {
+          order: 1;
+          width: 100px;
+          flex-basis: 500px;
+          margin: auto;
+        }
 
-/*img*/
-#onOneRow_front img {
-  order: 1;
-  width: 100px;
-}
+        #NCoE_logo {
+          display: flex;
+          justify-content: center;
+          width: 220px;
+          margin: auto;
+          padding: 20px 0 0 0;
+        }
 
-#NCoE_logo {
-  display: flex;
-  justify-content: center;
-  width: 220px;
-  margin: auto;
-  padding: 20px 0 0 0;
-}
+        /*txt*/
+        #frontFont1 {
+          font-family: "Crimson Text", serif;
+          font-size: 35pt;
+          font-variant: normal;
+          font-weight: 100;
+        }
 
-/*txt*/
-#frontFont1 {
-  font-family: "Crimson Text", serif;
-  font-size: 35pt;
-  font-variant: normal;
-  font-weight: 100;
-}
+        #frontFont2 {
+          font-family: futura, "Trebuchet MS", Arial, sans-serif;
+          font-weight:lighter;
+          font-size: 16pt;
+          letter-spacing: 1px;
+        }
 
-#frontFont2 {
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 16pt;
-  letter-spacing: 1px;
-}
+        #frontFont3 {
+          font-family: futura, "Trebuchet MS", Arial, sans-serif;
+          font-weight:lighter;
+          font-size: 14pt;
+          width: 80%;
+        }
 
-#frontFont3 {
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 14pt;
-  width: 80%;
-}
+  /*NEWS*/
+  #newsContainer {
+    /*border: 3px red solid;*/
+    order: 1;
+  }
 
-/*NEWS*/
-#newsContainer {
-  /*border: 3px red solid;*/
-  order: 1;
-}
+    #newsSlide {
+      display: flex;
+      margin: auto;
+      height: 450px;
+      background-color: #f5f5f5;
+      justify-content: space-around;
+    }
 
-#newsSlide {
-  display: flex;
-  margin: auto;
-  height: 450px;
-  background-color: #f5f5f5;
-  justify-content: space-around;
-}
-
-.newsBox {
-  flex-basis: 25%;
-  height: 100%;
-  margin: auto;
-  background-color: #f5f5f5;
-}
-
+        .newsBox {
+          flex-basis: 25%;
+          height: 100%;
+          margin: auto;
+          background-color: #f5f5f5;
+        }
+/*js*/
 .newsBox:hover, .pubBox:hover, .upevBox:hover{
   transform: scale(1.1);
 }
@@ -99,79 +95,10 @@ body {
   color:#4f4f4f;
 }
 
-/*img*/
-.newsBox img {
-  width: 100%;
-}
-
-/*txt*/
-.newsFont1 {
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 14pt;
-  letter-spacing: 1px;
-  margin: 0% 5%;
-}
-
-.newsFont2 {
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 10pt;
-  margin: 5%;
-}
-
-.newsFont3 {
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 9pt;
-  margin: 3% 5% 5% 5%;
-}
-
-/*RECENT PUBLICATIONS*/
-#recContainer {
-  /*border: 3px red solid;*/
-  order: 2;
-  margin: auto;
-}
-
-.pubBox {
-  flex-basis: 25%;
-  height: 80%;
-  margin: auto;
-  border-left: 2px rgb(104,195,148) solid;
-}
-
-#onOneRow_rec {
-  display: flex;
-  margin: auto;
-  padding: 100px 100px 100px 100px;
-}
-
-/*txt*/
-.headerFont {
-  font-family: futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight:lighter;
-  font-size: 16pt;
-  letter-spacing: 1px;
-  text-align: center;
-  margin: auto;
-  padding: 100px 0 50px 0;
-}
-
-/*UPCOMING EVENTS*/
-
-#upevContainer {
-  /*border: 3px red solid;*/
-  order: 3;
-  margin: auto;
-  background-color: #f5f5f5;
-}
-
-#onOneRow_upev {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 170px 100px 160px;
-}
+        /*img*/
+        .newsBox img {
+          width: 100%;
+        }
 
         /*txt*/
         .newsFont1 {
@@ -206,7 +133,7 @@ body {
     #onOneRow_rec {
       display: flex;
       margin: auto;
-      padding: 100px 100px 100px 100px;
+      padding: 100px;
     }
 
       .pubBox {
