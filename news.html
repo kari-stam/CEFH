@@ -3,33 +3,42 @@
     <head>
         <title>CeFH</title>
         <meta charset='UTF-8' />
-        <link rel='stylesheet' type='text/css' href='CSS/styling.css'>
-        <link rel='stylesheet' type='text/css' href='CSS/news.css'>
+        <link rel='stylesheet' type='text/css' href='CSS/styling.css'> <!--Universal styling-doc-->
+        <link rel='stylesheet' type='text/css' href='CSS/news.css'> <!--Local styling-doc-->
         <link href="https://fonts.googleapis.com/css?family=Crimson%20Text" rel="stylesheet">
         <link href="./img/logo_CeFH.png" rel="icon" type="image/x-icon"/>
     </head>
     <body>
-        <div id="menu"></div>
-        <!--<div class='white'>-->
+        <div id="menu"></div> <!--Anchor for header+footer.js-->
+        
+        <!--HEADER-->
         <div id='headerbox'>
             <div id=headText>
                 <p id='header'>News at the Centre for Fertility and Health</p>
             </div>
         </div>
-        <div class='searchField'>
+
+        <!--SEARCHFIELD-->
+        <div class='searchField'> <!--background box-->
             <div id='searchBoxNews'>
                 <input type='text' placeholder='Search news...' class='bodytext3' id='srcText'>
                 <input type='submit' value='' id='searchButtonNews' onclick='checkSrc()'>
             </div>
         </div>
+
+        <!--flex-box containing main content-->
         <div id='newsContent'>
+
+            <!--FILTER-->
             <div class='filter bodytext1'>
+                <!--YEAR-FILTER-->
                 <p id='filterYearHeader' class='subheader1'>Year</p>
                 <div id='yearsInner'>
                     <div> <a class='year' id='year1' href='#2019'> 2019</a></div>
                     <div> <a class='year' id='year2' href='#2018'> 2018 </a></div>
                     <div> <a class='year' id='year3' href='#2017'> 2017 </a></div>
                 </div>
+                <!--TAG-FILTER-->
                 <p id='filterHeader' class='subheader1'>Filter</p>
                 <span class='newsType'>
                     <input type="checkbox" id="general" class="checkbox" onclick="sortBoxes(); sortPublications()">
@@ -47,15 +56,20 @@
                     <input type="checkbox" id="events" class="checkbox" onclick="sortBoxes(); sortPublications()">
                     <label for='events' class="bodytext1 typeLink">Events</label></span>
             </div>
-            <div id='mainShit'>
+
+            <!--MAIN CONTENT - ARTICLES ETC-->
+            <div id='mainShit'> <!--flexbox-container-->
                 <div id='mainContent'>
+
+                    <!--Year 1-->
                     <div id='2019' class='scroll'></div>
                     <div class='subheader1 yearHeader'>2019</div>
+
                     <!-- 1st month -->
                     <button type='button' class='dropdown bodytext1'>
                         <span class='monthName'>November 2019</span>
                     </button>
-                    <div class='dropCont' style="max-height:750px;">
+                    <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                         <!-- Article 1.1 -->
                         <div class='newsArticle general'>
                             <img class='aImg' src='img/spermwhale.jpg' alt='Article Image'>
@@ -111,11 +125,12 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- 2nd month -->
                     <button type='button' class='dropdown bodytext1'>
                         <span class='monthName'>October 2019</span>
                     </button>
-                    <div class='dropCont' style="max-height:750px;">
+                    <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                         <!-- Article 2.1 -->
                         <div class='newsArticle events'>
                             <img class='aImg' src='img/spermwhale.jpg' alt='Article Image'>
@@ -153,11 +168,12 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- 3nrd month -->
                     <button type='button' class='dropdown bodytext1'>
                         <span class='monthName'>September 2019</span>
                     </button>
-                    <div class='dropCont' style="max-height:750px;">
+                    <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                         <!-- Article 2.1 -->
                         <div class='newsArticle publications'>
                             <img class='aImg' src='img/spermwhale.jpg' alt='Article Image'>
@@ -178,6 +194,7 @@
                         </div>
                     </div>
 
+                    <!--Year 2-->
                     <div id='2018' class='scroll'></div>
                     <div class='subheader1 yearHeader'>2018</div>
 
@@ -185,7 +202,7 @@
                     <button type='button' class='dropdown bodytext1'>
                             <span class='monthName'>November 2018</span>
                         </button>
-                        <div class='dropCont' style="max-height:750px;">
+                        <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                             <!-- Article 1.1 -->
                             <div class='newsArticle general'>
                                 <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
@@ -241,11 +258,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- 2nd month -->
                         <button type='button' class='dropdown bodytext1'>
                             <span class='monthName'>October 2018</span>
                         </button>
-                        <div class='dropCont' style="max-height:750px;">
+                        <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                             <!-- Article 2.1 -->
                             <div class='newsArticle events'>
                                 <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
@@ -287,7 +305,7 @@
                         <button type='button' class='dropdown bodytext1'>
                             <span class='monthName'>September 2018</span>
                         </button>
-                        <div class='dropCont' style="max-height:750px;">
+                        <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                             <!-- Article 2.1 -->
                             <div class='newsArticle publications'>
                                 <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
@@ -308,6 +326,7 @@
                             </div>
                         </div>
 
+                    <!--Year 3-->    
                     <div id='2017' class='scroll'></div>
                     <div class='subheader1 yearHeader'>2017</div>
 
@@ -315,7 +334,7 @@
                     <button type='button' class='dropdown bodytext1'>
                             <span class='monthName'>November 2017</span>
                         </button>
-                        <div class='dropCont' style="max-height:750px;">
+                        <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                             <!-- Article 1.1 -->
                             <div class='newsArticle general'>
                                 <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
@@ -375,7 +394,7 @@
                         <button type='button' class='dropdown bodytext1'>
                             <span class='monthName'>October 2017</span>
                         </button>
-                        <div class='dropCont' style="max-height:750px;">
+                        <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                             <!-- Article 2.1 -->
                             <div class='newsArticle events'>
                                 <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
@@ -417,7 +436,7 @@
                         <button type='button' class='dropdown bodytext1'>
                             <span class='monthName'>September 2017</span>
                         </button>
-                        <div class='dropCont' style="max-height:750px;">
+                        <div class='dropCont' style="max-height:750px;"> <!--max-height so the dropdowns start open-->
                             <!-- Article 2.1 -->
                             <div class='newsArticle publications'>
                                 <img class='aImg' src='img/norbis.jpeg' alt='Article Image'>
@@ -437,11 +456,10 @@
                                 </div>
                             </div>
                         </div>
-
                 </div>
             </div>
         </div>
-        <div id='footer'></div>
+        <div id='footer'></div> <!--Anchor for footer in header+footer.js-->
         <script src='js/search.js'></script>
         <script src='js/responsivenavbar.js'></script>
         <script src='js/table.js'></script>

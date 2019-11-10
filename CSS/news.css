@@ -208,6 +208,7 @@
         margin-top: 10px;
     }
 
+    /*Creates empty block so the 'year-tag' appears below the menu when using the year-filter*/
     .scroll{
         display: block;
         height: 90px;
