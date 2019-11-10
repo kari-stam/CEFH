@@ -1,17 +1,17 @@
 
-.monthEvents {
+.dropCont {
   max-height: 0;
   display: flex;
   overflow: hidden;
   flex-direction: column;
   transition: max-height 0.2s linear;
-  
+
 }
 
 /*max-height set to 0 so that the buttons will hide all the events when clicked on.*/
 
 
-.event {
+.newsArticle {
   background-color: #F5F5F5;
   border: 0;
   align-self: flex-start;

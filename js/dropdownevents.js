@@ -6,8 +6,8 @@ var i;
 
 
 for (i = 0; i < drop.length; i++) { /*goes through all month buttons*/
-    let dropCont=document.getElementsByClassName('monthEvents'); /*All the events inside one month*/
-    let cont = document.getElementsByClassName('monthEvents')[i].getElementsByClassName('event');
+    let dropCont=document.getElementsByClassName('dropCont'); /*All the events inside one month*/
+    let cont = document.getElementsByClassName('dropCont')[i].getElementsByClassName('newsArticle');
     console.log(cont);
     drop[i].addEventListener("click", function() { /*when clicking on button, this function will run*/
         this.classList.toggle("active"); /*sets status to active, so it can be used in the css*/
@@ -16,7 +16,7 @@ for (i = 0; i < drop.length; i++) { /*goes through all month buttons*/
                 content.style.maxHeight = null; /*hides events inside month*/
             }
             else {
-                content.style.maxHeight = 1500 + 'px';  /*shows all events inside a month, inside a 1000px height*/
+                content.style.maxHeight = 1000 + 'px';  /*shows all events inside a month, inside a 1000px height*/
             }
     });
   }
