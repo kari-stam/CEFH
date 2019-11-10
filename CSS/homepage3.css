@@ -1,0 +1,98 @@
+/*general shit*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#wrapping{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu{
+    align-self: flex-start;
+}
+
+#newsContainer{
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+}
+
+#newsSlide{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.newsBox{
+    width: 25%;
+}
+
+.newslink img{
+    width: 100%;
+}
+
+/*FRONT*//*
+#frontContainer {
+    order: 0;
+    flex-basis: auto;
+    margin: auto;
+    padding: 12% 15% 8% 15%;
+}
+
+#onOneRow_front {
+display: flex;
+}
+
+#onOneRow_front div {
+order: 0;
+width: 800px;
+}
+
+#onOneRow_front img {
+order: 1;
+flex-basis: 500px;
+margin: auto;
+}
+
+/*img*//*
+#onOneRow_front img {
+    order: 1;
+    width: 100px;
+}
+
+#NCoE_logo {
+display: flex;
+justify-content: center;
+width: 220px;
+margin: auto;
+padding: 20px 0 0 0;
+}
+
+/*txt*//*
+#frontFont1 {
+font-family: "Crimson Text", serif;
+font-size: 35pt;
+font-variant: normal;
+font-weight: 100;
+}
+
+#frontFont2 {
+font-family: futura, "Trebuchet MS", Arial, sans-serif;
+font-weight:lighter;
+font-size: 16pt;
+letter-spacing: 1px;
+}
+
+#frontFont3 {
+font-family: futura, "Trebuchet MS", Arial, sans-serif;
+font-weight:lighter;
+font-size: 14pt;
+width: 80%;
+}
