@@ -282,7 +282,7 @@
             }
 
                 .aImg{
-                    object-fit:cover;
+                    object-fit: cover;
                     width: 50%;
                     height: 100%;
                 }
